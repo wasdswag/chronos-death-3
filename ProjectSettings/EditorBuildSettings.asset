@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/PONG_MOZART/Menu.unity
+    guid: 02e49c965b9b6421da7504136299de69
+  - enabled: 1
+    path: Assets/PONG_MOZART/_Pong.unity
+    guid: 2187131ff27ef4d878fc0728fb1f0a85
+  - enabled: 0
+    path: Assets/Forest/Forrest.unity
+    guid: 571827695597b49a3a022a08e2f06448
+  - enabled: 0
+    path: Assets/Spinner/MacSpinner_bkp.unity
+    guid: 199fd0551f6ca49509e4fa610827ac3a
+  - enabled: 0
+    path: Assets/Spinner/WinSpinner.unity
+    guid: 9ed3eb0ce937e4a8b86358fbba81a49d
+  m_configObjects: {}

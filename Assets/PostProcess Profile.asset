@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-4113806054085161466
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c53ac839fba94dc9910d8c64d4e83d0, type: 3}
+  m_Name: Halftone
+  m_EditorClassIdentifier: 
+  active: 1
+  enabled:
+    overrideState: 1
+    value: 1
+  Intensity:
+    overrideState: 1
+    value: 0.452
+  DotColor:
+    overrideState: 0
+    value: {r: 0, g: 0, b: 0, a: 1}
+  BackgroundColor:
+    overrideState: 0
+    value: {r: 1, g: 1, b: 1, a: 1}
+  CellSize:
+    overrideState: 0
+    value: 0.83
+  DotSize:
+    overrideState: 0
+    value: 0.3
+  DotSmoothness:
+    overrideState: 0
+    value: 0.0001
+  Highlights:
+    overrideState: 0
+    value: 0.2126
+  Midtones:
+    overrideState: 0
+    value: 0.7152
+  Shadows:
+    overrideState: 0
+    value: 0.0722
+  DotWidth:
+    overrideState: 0
+    value: 1
+  DotRotation:
+    overrideState: 0
+    value: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+  m_Name: PostProcess Profile
+  m_EditorClassIdentifier: 
+  settings:
+  - {fileID: -4113806054085161466}

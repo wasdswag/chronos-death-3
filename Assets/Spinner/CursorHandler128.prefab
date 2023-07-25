@@ -1,0 +1,65 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4507445801310360406
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8727067694653094364}
+  - component: {fileID: 6709034339414838137}
+  m_Layer: 0
+  m_Name: CursorHandler128
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &8727067694653094364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4507445801310360406}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.568597, y: 0.4634196, z: 2.9740074}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6709034339414838137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4507445801310360406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0f796626382942c0b1743a9821a5f036, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  regular:
+    icon: {fileID: 2800000, guid: 33cbb70dead7c417f8af43e53e154e9b, type: 3}
+    offset: {x: 40, y: 5}
+  over:
+    icon: {fileID: 2800000, guid: 6a75ef8d0818542feb397179e42d6bda, type: 3}
+    offset: {x: 0, y: 10}
+  move:
+    icon: {fileID: 2800000, guid: 09d22b7b5a04a4535aaf773e1cc6a51b, type: 3}
+    offset: {x: 40, y: 50}
+  spin:
+    icon: {fileID: 2800000, guid: 52242bacd7bce4d0984091073796e85f, type: 3}
+    offset: {x: 40, y: 20}
+  spinOver:
+    icon: {fileID: 2800000, guid: 52242bacd7bce4d0984091073796e85f, type: 3}
+    offset: {x: 40, y: 20}
+  moveOver:
+    icon: {fileID: 2800000, guid: 5aeeeb9369d484aaebc3132d3f665180, type: 3}
+    offset: {x: 60, y: 60}
+  isTesting: 1

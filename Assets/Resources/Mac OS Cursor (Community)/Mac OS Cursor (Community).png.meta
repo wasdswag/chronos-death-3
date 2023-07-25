@@ -1,0 +1,3711 @@
+fileFormatVersion: 2
+guid: 2eabe497394a8483884309618e76fe43
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 7
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 610
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d044418b07940c5b9a11622e482337
+      internalID: 894388664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 647
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891f2528ee4b64f6a83308ec56d466c6
+      internalID: 106262433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_2
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c89bdf87b2c1c4f25bf57dfed96209a8
+      internalID: 847003515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_3
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b8de66b34d6426384cfebd16cd10b2
+      internalID: 1900125352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_4
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cb93be12a8bc4257bcc9a4c1cfb529e
+      internalID: 184351144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_5
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b64591948b1b42f399cb2af4d0c834a
+      internalID: -1283980743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_6
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2765ea9b273fc4aa4b675e9b97c9e0aa
+      internalID: 998502789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_7
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7961ee4583650461690fd6728cdf7b56
+      internalID: -2071319003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_8
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da4268df1789410e9a3dbd985406da9
+      internalID: 752022148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_9
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 976063775f93b434da3283f7dbdb242a
+      internalID: 1396020644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_10
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f66524026ad41318c5e9584ea820d0
+      internalID: 524042103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_11
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9bec04c7e6554dacace28c00a03170b
+      internalID: -1678675097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_12
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06583affb828b440abbf5963c31cc141
+      internalID: 520270829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_13
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 647
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb75d6757612e4c95923904cd8f6bedd
+      internalID: -1169458108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_14
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 647
+        width: 45
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82bb599d331184fd9a2650662476a21a
+      internalID: -857646180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_15
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 647
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6a008a23c38a41b6a44d27be665d974
+      internalID: 1165118652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_16
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c983d591d223a4642bc9aa9b34b3a7aa
+      internalID: 208876080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_17
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2224cf44f484a56b6b03f475558231
+      internalID: 281743192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_18
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 647
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b34873f37bf492e9de9c322cd977d3
+      internalID: -1294810878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_19
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 647
+        width: 45
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93a5ac3356f054fe6b183b4ac78e696a
+      internalID: -301477310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_20
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 647
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77f5c46ec4f043c9938cf9aba431d25
+      internalID: 1824904314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_21
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f03503ba1c5b4f678d827cee05dd4c0
+      internalID: -978331921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_22
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 775f1ab2e8ff04157b304b39a1492652
+      internalID: -1948880668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_23
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3268b2bd107fe4c1c8909dc8f53e1d64
+      internalID: 67380805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_24
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21e837eb893124b66a7052aaacba5b5a
+      internalID: 445938614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_25
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 647
+        width: 42
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c4c71d6fb64424ab2ec9ecdbbf48c0
+      internalID: -1368416244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_26
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e23ba17b2abe4aeca29082e424237dd
+      internalID: -1442621223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_27
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6e4c3281fafd4049a5105062e6b4b1f
+      internalID: 744610084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_28
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ae6be62ad2044356b10e960c2490717
+      internalID: 1875089138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_29
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0e069cfc0cd4bdf9528ff11e1e4010
+      internalID: -1433919374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_30
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 647
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 102a404fe111b414d928f7d9b6f7a12f
+      internalID: 310149129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_31
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 647
+        width: 45
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 067fbfb29d30f4695a560eea154f5c80
+      internalID: 2037555857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_32
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78f65212544b242f18a1fa54c8408d49
+      internalID: 1932585559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_33
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ac1fabd805448fabee97dab5204ba2
+      internalID: -1914246904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_34
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74e13041d73684c0a9677454dd471a4d
+      internalID: -1789116679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_35
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 647
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3364542282cb4917833485548ebbf7b
+      internalID: 256577020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_36
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 647
+        width: 45
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c19c5b5e0ef40caaca62ef30b539cd
+      internalID: -1493195743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_37
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 647
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f896c8d258b4215b907aa656a28438
+      internalID: -681581749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_38
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75dbbec0370604daf901dff46d5daffd
+      internalID: -164042835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_39
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cec4d915bdf8b47cfa231bff422c5c52
+      internalID: -1389911328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_40
+      rect:
+        serializedVersion: 2
+        x: 2382
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0b213f85884243b296bf6b1706ff91b
+      internalID: 760897842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_41
+      rect:
+        serializedVersion: 2
+        x: 2441
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3077e899c607c44bc80c9228d864d1e1
+      internalID: 676410986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_42
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc48bee6b5863486e919e881ad114858
+      internalID: -320988066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_43
+      rect:
+        serializedVersion: 2
+        x: 2561
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a1d25b28c1204bb8bb92b0af09aa5c0
+      internalID: -681552705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_44
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa1cc10ececa4df2bb058868a2ee3c8
+      internalID: -1828422761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_45
+      rect:
+        serializedVersion: 2
+        x: 2680
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c11d096ecae2a4e1eaa3aed4b234af2c
+      internalID: -99159875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_46
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f6a72829211473b83668a196be74c0
+      internalID: -389510361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_47
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cf95af955f4f47c2a77d70b36b0e912
+      internalID: 1947311482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_48
+      rect:
+        serializedVersion: 2
+        x: 2859
+        y: 647
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846067e918e2c4ae0962fe191b52c862
+      internalID: 885584496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_49
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 647
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fc4b93464456471e90b30b04120cedc
+      internalID: -864673856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_50
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 610
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0768dd554bbe4e098ed710ceee27932
+      internalID: 727601156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_51
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 548
+        width: 5
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319ec6d5b5a5b468ea1e633235ca9c56
+      internalID: 1913554745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_52
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 457
+        width: 96
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46934b53f74574276b0b7dc719b39447
+      internalID: 421049492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_53
+      rect:
+        serializedVersion: 2
+        x: 680
+        y: 434
+        width: 92
+        height: 140
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48192db07c70c4695a95b326cf2aea4c
+      internalID: 218183350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_54
+      rect:
+        serializedVersion: 2
+        x: 908
+        y: 434
+        width: 92
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4e6e4960a154e6e97b833b6443bb3d
+      internalID: -1295047118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_55
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 434
+        width: 92
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d464100ac1c43ee929574f903c7973
+      internalID: -14786334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_56
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 548
+        width: 5
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 456ee1b62372e4d11be0b0edc9458e9c
+      internalID: 1921698079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_57
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 488
+        width: 5
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e794259036da40ad96cf1eaa7e68c37
+      internalID: -671747373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_58
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 461
+        width: 59
+        height: 85
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fbbba04ed7c4821bc7c1a0d8438070
+      internalID: -1934564740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_59
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 471
+        width: 38
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 832fc5e0ba6b6423babf9feae154f832
+      internalID: -1816563502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_60
+      rect:
+        serializedVersion: 2
+        x: 1137
+        y: 471
+        width: 69
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac003b340f52445e88a3ae7da65f2977
+      internalID: -1984311568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_61
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 464
+        width: 75
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e9aafca8d773466ba7a204d9dc607dd
+      internalID: -972210680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_62
+      rect:
+        serializedVersion: 2
+        x: 1556
+        y: 466
+        width: 79
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b8aae086601547d69fd9bcea299c8cd
+      internalID: -841114765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_63
+      rect:
+        serializedVersion: 2
+        x: 1772
+        y: 466
+        width: 79
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d1d888c52354d3aaef143e4305dad1
+      internalID: 1769956439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_64
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 466
+        width: 76
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e89a60538ce484cd198fab06968ac7ab
+      internalID: -1640921886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_65
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 468
+        width: 76
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 187594f866eaa42f1995f7e887cde2ea
+      internalID: -1529380322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_66
+      rect:
+        serializedVersion: 2
+        x: 2412
+        y: 469
+        width: 56
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ebb217490e74464bfe404e8fde66dd
+      internalID: 2046612810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_67
+      rect:
+        serializedVersion: 2
+        x: 2603
+        y: 466
+        width: 53
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cde096960432427c9836f1dcf473979
+      internalID: 945144385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_68
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 488
+        width: 5
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 596efc18fde004b3e81b27ab51e4d536
+      internalID: -326881907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_69
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 426
+        width: 5
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcbd06aa21c424a7a85ed9c5abff6666
+      internalID: -1219201269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_70
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 426
+        width: 5
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e1114c3b8d824133aad45a00fa633f8
+      internalID: -827023996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_71
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 365
+        width: 5
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 297e35614e4884416b5ebe99451e9d7f
+      internalID: -319661100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_72
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 224
+        width: 94
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6277d1b10087849bca6320e13a14c2d0
+      internalID: -1720324655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_73
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 365
+        width: 5
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a7b7b180bc54ca0bd56058965eeb8e
+      internalID: -683532915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_74
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 303
+        width: 5
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c6204fc9513840a882552ea1211784a
+      internalID: -939365268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_75
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 260
+        width: 59
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c4e689efcb64b7eb61aab61d722858
+      internalID: 1514174197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_76
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 267
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 128a5928f70cf40948f032d96782fe5a
+      internalID: -2047335776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_77
+      rect:
+        serializedVersion: 2
+        x: 468
+        y: 267
+        width: 66
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a7791b2a35fd447ea6ba4b62f93e2fe
+      internalID: -2029421040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_78
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 266
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99dd29f0536e04d7c8725473e52d6e65
+      internalID: -1249096366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_79
+      rect:
+        serializedVersion: 2
+        x: 870
+        y: 261
+        width: 60
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b21c5370e46444a4caf23e7f40159dd1
+      internalID: -703341623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_80
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 266
+        width: 56
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a32ab820e6fd4801a556b581325c614
+      internalID: -962699408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_81
+      rect:
+        serializedVersion: 2
+        x: 1265
+        y: 267
+        width: 67
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7284693e4843e495eb7d5b25e8170f91
+      internalID: 733210727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_82
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 267
+        width: 57
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 103a3bc8273f646779ada9826b45a4f0
+      internalID: -525490910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_83
+      rect:
+        serializedVersion: 2
+        x: 1902
+        y: 259
+        width: 8
+        height: 82
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0660b2e5da7b4abbabd8cd3d7434996
+      internalID: -71314234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_84
+      rect:
+        serializedVersion: 2
+        x: 2058
+        y: 250
+        width: 7
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1698e2f682939415aae18b159c5ee71f
+      internalID: -627139098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_85
+      rect:
+        serializedVersion: 2
+        x: 2213
+        y: 282
+        width: 67
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a8d297df48a4985bc8185966495f3f
+      internalID: 1610246484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_86
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 255
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d739e05631646427ab25e38e9157a813
+      internalID: -1234723711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_87
+      rect:
+        serializedVersion: 2
+        x: 2639
+        y: 250
+        width: 94
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4712d891f409746ad854c83a0bb40efd
+      internalID: 1702136970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_88
+      rect:
+        serializedVersion: 2
+        x: 2876
+        y: 260
+        width: 72
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a10a4243b736c4b4ab830eb98dc2e6a9
+      internalID: 40372795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_89
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 303
+        width: 5
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c82edf65d3be478787d2b983ac75310
+      internalID: 2050164746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 243
+        width: 5
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81f10a2507b8d471e86842c230574fd8
+      internalID: 394383341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_91
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 243
+        width: 5
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8bf32b1bef8948718f63c98597d8260
+      internalID: 1917162762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_92
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 181
+        width: 5
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2378528dbe574d108237f782573826c
+      internalID: -298602757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_93
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 181
+        width: 5
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71973fc36fd5049328ab2c2664a00029
+      internalID: -488502599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_94
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 120
+        width: 5
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56f397ec53494415ab551ed5ec04c44
+      internalID: -257244975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_95
+      rect:
+        serializedVersion: 2
+        x: 75
+        y: 78
+        width: 59
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05d9bf5f813ea4a0ab001c5c5eb09625
+      internalID: -1310167985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_96
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 87
+        width: 77
+        height: 59
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e88bf8711d7db4e899f2db9f786ddd0e
+      internalID: -1060076611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_97
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 81
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 768f630891685465caba983316236d86
+      internalID: 1936862719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_98
+      rect:
+        serializedVersion: 2
+        x: 696
+        y: 81
+        width: 72
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea19d52adaf7044b9b3c017e693d8ed9
+      internalID: -955287848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_99
+      rect:
+        serializedVersion: 2
+        x: 904
+        y: 74
+        width: 80
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68c0dbaf0a1f247b3929f6408e6b9b3f
+      internalID: -588600535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_100
+      rect:
+        serializedVersion: 2
+        x: 1122
+        y: 76
+        width: 84
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66a52969366b479eae227fd3acd7e38
+      internalID: 907592815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_101
+      rect:
+        serializedVersion: 2
+        x: 1344
+        y: 84
+        width: 79
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfddbb6b0f7384b309120d5cbe92918d
+      internalID: -1971869924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_102
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 76
+        width: 59
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3a0940b84c94ab6b9f54424df5fc37
+      internalID: -606285952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_103
+      rect:
+        serializedVersion: 2
+        x: 1756
+        y: 86
+        width: 80
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fb08499ff0aa44c3bcdb210483dd129
+      internalID: 1943485167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_104
+      rect:
+        serializedVersion: 2
+        x: 1974
+        y: 76
+        width: 58
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2256958f6783e40f3bdb80d0cec425fa
+      internalID: 248038991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_105
+      rect:
+        serializedVersion: 2
+        x: 2168
+        y: 72
+        width: 52
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 911cc57c09b5a44f689814699e498f53
+      internalID: -713477118
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_106
+      rect:
+        serializedVersion: 2
+        x: 2356
+        y: 72
+        width: 104
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93dbda0224205463d87af4374081df56
+      internalID: 22362490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_107
+      rect:
+        serializedVersion: 2
+        x: 2595
+        y: 72
+        width: 85
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af0e5a30590a43418605b9ede48ddfd
+      internalID: -1773263780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_108
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 120
+        width: 5
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76d5cdaf286674bd09b2c0712dcbf231
+      internalID: -1777373149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_109
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 58
+        width: 5
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c750fcb780ae44406b8a0623bdec3f9a
+      internalID: 1113166337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_110
+      rect:
+        serializedVersion: 2
+        x: 3015
+        y: 58
+        width: 5
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cadfcc223678a4c8fab04fdb86b11b79
+      internalID: -2133625564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_111
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3938214b838c4149922d6b1b2bf8cbf
+      internalID: -1929535449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_112
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 0
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c47c2041632f84e4d8f3d4e4c012dda2
+      internalID: 1459776047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_113
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab4eb105b7eaa48689266f0081bbeb39
+      internalID: -1072498415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_114
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba639a1e17c4246e492c40d3edadd828
+      internalID: -1559747596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_115
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b05db944ef394e6d927a06ffe4a8981
+      internalID: -1755296375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_116
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 279762522d59d4ee08a0007e55abdbae
+      internalID: -1875215859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_117
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 391c03d1fe7b14eafaa553ae07b39588
+      internalID: -388184229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_118
+      rect:
+        serializedVersion: 2
+        x: 415
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c533436c54f144ff396d8698e978c68c
+      internalID: -995763312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_119
+      rect:
+        serializedVersion: 2
+        x: 474
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e71cd9ec37d69446f900f1b7ab3622ea
+      internalID: -509716212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_120
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c311e49c6484d47929a0a41a64958521
+      internalID: -40574122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_121
+      rect:
+        serializedVersion: 2
+        x: 594
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0043d88e6fd540b8ad766b104e57ab5
+      internalID: -311430975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_122
+      rect:
+        serializedVersion: 2
+        x: 654
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e69485fbbe1bf4611bc9edcbd60dc2b9
+      internalID: -604331995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_123
+      rect:
+        serializedVersion: 2
+        x: 713
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bc41d1d0d0c34bc8b9b9ea8e3b03c31
+      internalID: -433921530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_124
+      rect:
+        serializedVersion: 2
+        x: 773
+        y: 0
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58b01e04ea4c0470dae1b4ce6726f023
+      internalID: -1852847936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_125
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 0
+        width: 45
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 885ae89f93e52418c85cfcd47f260c3f
+      internalID: 1051470378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_126
+      rect:
+        serializedVersion: 2
+        x: 893
+        y: 0
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c7b7d73189884f1f89a4f60a24866ad
+      internalID: 1515766917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_127
+      rect:
+        serializedVersion: 2
+        x: 952
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bcc4269ab2db4fc89887a3e0f4546cc
+      internalID: 1905607670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_128
+      rect:
+        serializedVersion: 2
+        x: 1011
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1c47e13063ad4125adb53c7aa47dc59
+      internalID: 1810058569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_129
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 0
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acf9f13684d6b466bb19ea8e2f890607
+      internalID: -118572649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_130
+      rect:
+        serializedVersion: 2
+        x: 1130
+        y: 0
+        width: 45
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e29ed4c395ca46ef9ad22e619630fed
+      internalID: 1273419731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_131
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 0
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33be7d1c7b9a44ee89a65a2e5166e1d5
+      internalID: -1346325427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_132
+      rect:
+        serializedVersion: 2
+        x: 1250
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d1235f774f242548dc71223bc0e12a
+      internalID: -1236418247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_133
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b926cab66e9684313a3fc008ebafefed
+      internalID: 4214832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_134
+      rect:
+        serializedVersion: 2
+        x: 1369
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 153524e9a647042cbb3e139cb724ef97
+      internalID: -1020789109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_135
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90ccc2a80832e44f7a3a92f0b555cf89
+      internalID: 578706053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_136
+      rect:
+        serializedVersion: 2
+        x: 1489
+        y: 0
+        width: 42
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6309526e81a143aa94785f07257b40a
+      internalID: -944330646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_137
+      rect:
+        serializedVersion: 2
+        x: 1548
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18451393e90a044c3802b189c1d8e651
+      internalID: -2724872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_138
+      rect:
+        serializedVersion: 2
+        x: 1607
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17faf3fe6e7b64df69f1fd6f74baa0f0
+      internalID: -542042190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_139
+      rect:
+        serializedVersion: 2
+        x: 1667
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba9ffdc26bd242a7af419136ee59b65
+      internalID: -1304038935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_140
+      rect:
+        serializedVersion: 2
+        x: 1726
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c627786c7457e4d0facc0358ca7d6443
+      internalID: -364904900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_141
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 0
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9dce38a53024cffb247d1ede5c0d19
+      internalID: 42313010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_142
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 0
+        width: 45
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 084ef96340ef34b048bb112d423a6353
+      internalID: -1994782124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_143
+      rect:
+        serializedVersion: 2
+        x: 1905
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56d5a86bd76f4653b3a8cb6a2721242
+      internalID: 736404708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_144
+      rect:
+        serializedVersion: 2
+        x: 1965
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b22d247137294001b638f3bc68751e5
+      internalID: -1756449601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_145
+      rect:
+        serializedVersion: 2
+        x: 2024
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8dec6d6f39a4367b78ca64db81249f
+      internalID: -1963645484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_146
+      rect:
+        serializedVersion: 2
+        x: 2084
+        y: 0
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173845d3ca510488d8dd766da9b5176f
+      internalID: 372315530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_147
+      rect:
+        serializedVersion: 2
+        x: 2143
+        y: 0
+        width: 45
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bc98936e614426ba4a536560efd40c
+      internalID: 1114582003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_148
+      rect:
+        serializedVersion: 2
+        x: 2204
+        y: 0
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21fd2488ca6794ce88d280642eb23ea2
+      internalID: 994629036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_149
+      rect:
+        serializedVersion: 2
+        x: 2263
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5989b99e5aa84bc9bb4f09cd4c8f85b
+      internalID: -381342691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_150
+      rect:
+        serializedVersion: 2
+        x: 2322
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b50307cc294f743618ced568688f262e
+      internalID: -1475707506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_151
+      rect:
+        serializedVersion: 2
+        x: 2382
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57311d28134e445198fe0805b43a0b55
+      internalID: -771626754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_152
+      rect:
+        serializedVersion: 2
+        x: 2441
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a0fa58d4ea954f12937218124705ef7
+      internalID: -1260445165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_153
+      rect:
+        serializedVersion: 2
+        x: 2502
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d61173b7aefe4b188c688dd933e40b7
+      internalID: -1712919737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_154
+      rect:
+        serializedVersion: 2
+        x: 2561
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58d44ea99f830401f83f71dff136d3ec
+      internalID: 1255221108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_155
+      rect:
+        serializedVersion: 2
+        x: 2620
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f512ecf8d2da64c6e9bc62226585a4d5
+      internalID: 237241294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_156
+      rect:
+        serializedVersion: 2
+        x: 2680
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4e0518382514d77aec1452cd397580
+      internalID: -940771786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_157
+      rect:
+        serializedVersion: 2
+        x: 2739
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0b3303e959049afa87e2320ab7d5f3
+      internalID: -286919870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_158
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e330920ed5e1245c78dde9ffeb23eb57
+      internalID: 992030310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_159
+      rect:
+        serializedVersion: 2
+        x: 2859
+        y: 0
+        width: 44
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a013b264c6104bc6bc1157db34f450d
+      internalID: 658748971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_160
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 0
+        width: 43
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d75097d2dd84883b38a7910e2aa091
+      internalID: -1281504885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mac OS Cursor (Community)_161
+      rect:
+        serializedVersion: 2
+        x: 2978
+        y: 0
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da46badfc78f94d9bb7abfbcf1e44f65
+      internalID: -844230371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2f93d25d7ec6e4efa8a20cd313c12114
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mac OS Cursor (Community)_142: -1994782124
+      Mac OS Cursor (Community)_28: 1875089138
+      Mac OS Cursor (Community)_22: -1948880668
+      Mac OS Cursor (Community)_42: -320988066
+      Mac OS Cursor (Community)_58: -1934564740
+      Mac OS Cursor (Community)_52: 421049492
+      Mac OS Cursor (Community)_153: -1712919737
+      Mac OS Cursor (Community)_99: -588600535
+      Mac OS Cursor (Community)_112: 1459776047
+      Mac OS Cursor (Community)_20: 1824904314
+      Mac OS Cursor (Community)_63: 1769956439
+      Mac OS Cursor (Community)_26: -1442621223
+      Mac OS Cursor (Community)_16: 208876080
+      Mac OS Cursor (Community)_44: -1828422761
+      Mac OS Cursor (Community)_43: -681552705
+      Mac OS Cursor (Community)_138: -542042190
+      Mac OS Cursor (Community)_100: 907592815
+      Mac OS Cursor (Community)_83: -71314234
+      Mac OS Cursor (Community)_129: -118572649
+      Mac OS Cursor (Community)_136: -944330646
+      Mac OS Cursor (Community)_87: 1702136970
+      Mac OS Cursor (Community)_128: 1810058569
+      Mac OS Cursor (Community)_39: -1389911328
+      Mac OS Cursor (Community)_8: 752022148
+      Mac OS Cursor (Community)_88: 40372795
+      Mac OS Cursor (Community)_57: -671747373
+      Mac OS Cursor (Community)_9: 1396020644
+      Mac OS Cursor (Community)_104: 248038991
+      Mac OS Cursor (Community)_56: 1921698079
+      Mac OS Cursor (Community)_19: -301477310
+      Mac OS Cursor (Community)_93: -488502599
+      Mac OS Cursor (Community)_66: 2046612810
+      Mac OS Cursor (Community)_80: -962699408
+      Mac OS Cursor (Community)_2: 847003515
+      Mac OS Cursor (Community)_126: 1515766917
+      Mac OS Cursor (Community)_108: -1777373149
+      Mac OS Cursor (Community)_152: -1260445165
+      Mac OS Cursor (Community)_97: 1936862719
+      Mac OS Cursor (Community)_30: 310149129
+      Mac OS Cursor (Community)_133: 4214832
+      Mac OS Cursor (Community)_60: -1984311568
+      Mac OS Cursor (Community)_0: 894388664
+      Mac OS Cursor (Community)_106: 22362490
+      Mac OS Cursor (Community)_40: 760897842
+      Mac OS Cursor (Community)_23: 67380805
+      Mac OS Cursor (Community)_125: 1051470378
+      Mac OS Cursor (Community)_132: -1236418247
+      Mac OS Cursor (Community)_13: -1169458108
+      Mac OS Cursor (Community)_64: -1640921886
+      Mac OS Cursor (Community)_157: -286919870
+      Mac OS Cursor (Community)_139: -1304038935
+      Mac OS Cursor (Community)_115: -1755296375
+      Mac OS Cursor (Community)_144: -1756449601
+      Mac OS Cursor (Community)_90: 394383341
+      Mac OS Cursor (Community)_72: -1720324655
+      Mac OS Cursor (Community)_49: -864673856
+      Mac OS Cursor (Community)_7: -2071319003
+      Mac OS Cursor (Community)_21: -978331921
+      Mac OS Cursor (Community)_51: 1913554745
+      Mac OS Cursor (Community)_27: 744610084
+      Mac OS Cursor (Community)_103: 1943485167
+      Mac OS Cursor (Community)_95: -1310167985
+      Mac OS Cursor (Community)_160: -1281504885
+      Mac OS Cursor (Community)_105: -713477118
+      Mac OS Cursor (Community)_84: -627139098
+      Mac OS Cursor (Community)_65: -1529380322
+      Mac OS Cursor (Community)_47: 1947311482
+      Mac OS Cursor (Community)_33: -1914246904
+      Mac OS Cursor (Community)_46: -389510361
+      Mac OS Cursor (Community)_45: -99159875
+      Mac OS Cursor (Community)_14: -857646180
+      Mac OS Cursor (Community)_101: -1971869924
+      Mac OS Cursor (Community)_122: -604331995
+      Mac OS Cursor (Community)_71: -319661100
+      Mac OS Cursor (Community)_130: 1273419731
+      Mac OS Cursor (Community)_110: -2133625564
+      Mac OS Cursor (Community)_41: 676410986
+      Mac OS Cursor (Community)_62: -841114765
+      Mac OS Cursor (Community)_94: -257244975
+      Mac OS Cursor (Community)_96: -1060076611
+      Mac OS Cursor (Community)_113: -1072498415
+      Mac OS Cursor (Community)_89: 2050164746
+      Mac OS Cursor (Community)_76: -2047335776
+      Mac OS Cursor (Community)_35: 256577020
+      Mac OS Cursor (Community)_4: 184351144
+      Mac OS Cursor (Community)_17: 281743192
+      Mac OS Cursor (Community)_70: -827023996
+      Mac OS Cursor (Community)_141: 42313010
+      Mac OS Cursor (Community)_147: 1114582003
+      Mac OS Cursor (Community)_158: 992030310
+      Mac OS Cursor (Community)_6: 998502789
+      Mac OS Cursor (Community)_135: 578706053
+      Mac OS Cursor (Community)_143: 736404708
+      Mac OS Cursor (Community)_150: -1475707506
+      Mac OS Cursor (Community)_29: -1433919374
+      Mac OS Cursor (Community)_73: -683532915
+      Mac OS Cursor (Community)_117: -388184229
+      Mac OS Cursor (Community)_85: 1610246484
+      Mac OS Cursor (Community)_61: -972210680
+      Mac OS Cursor (Community)_32: 1932585559
+      Mac OS Cursor (Community)_53: 218183350
+      Mac OS Cursor (Community)_34: -1789116679
+      Mac OS Cursor (Community)_131: -1346325427
+      Mac OS Cursor (Community)_86: -1234723711
+      Mac OS Cursor (Community)_119: -509716212
+      Mac OS Cursor (Community)_161: -844230371
+      Mac OS Cursor (Community)_82: -525490910
+      Mac OS Cursor (Community)_121: -311430975
+      Mac OS Cursor (Community)_118: -995763312
+      Mac OS Cursor (Community)_146: 372315530
+      Mac OS Cursor (Community)_137: -2724872
+      Mac OS Cursor (Community)_18: -1294810878
+      Mac OS Cursor (Community)_111: -1929535449
+      Mac OS Cursor (Community)_81: 733210727
+      Mac OS Cursor (Community)_127: 1905607670
+      Mac OS Cursor (Community)_25: -1368416244
+      Mac OS Cursor (Community)_98: -955287848
+      Mac OS Cursor (Community)_102: -606285952
+      Mac OS Cursor (Community)_120: -40574122
+      Mac OS Cursor (Community)_3: 1900125352
+      Mac OS Cursor (Community)_151: -771626754
+      Mac OS Cursor (Community)_15: 1165118652
+      Mac OS Cursor (Community)_54: -1295047118
+      Mac OS Cursor (Community)_78: -1249096366
+      Mac OS Cursor (Community)_156: -940771786
+      Mac OS Cursor (Community)_10: 524042103
+      Mac OS Cursor (Community)_59: -1816563502
+      Mac OS Cursor (Community)_48: 885584496
+      Mac OS Cursor (Community)_50: 727601156
+      Mac OS Cursor (Community)_149: -381342691
+      Mac OS Cursor (Community)_116: -1875215859
+      Mac OS Cursor (Community)_148: 994629036
+      Mac OS Cursor (Community)_109: 1113166337
+      Mac OS Cursor (Community)_67: 945144385
+      Mac OS Cursor (Community)_37: -681581749
+      Mac OS Cursor (Community)_75: 1514174197
+      Mac OS Cursor (Community)_31: 2037555857
+      Mac OS Cursor (Community)_38: -164042835
+      Mac OS Cursor (Community)_55: -14786334
+      Mac OS Cursor (Community)_154: 1255221108
+      Mac OS Cursor (Community)_79: -703341623
+      Mac OS Cursor (Community)_24: 445938614
+      Mac OS Cursor (Community)_68: -326881907
+      Mac OS Cursor (Community)_159: 658748971
+      Mac OS Cursor (Community)_36: -1493195743
+      Mac OS Cursor (Community)_74: -939365268
+      Mac OS Cursor (Community)_92: -298602757
+      Mac OS Cursor (Community)_77: -2029421040
+      Mac OS Cursor (Community)_12: 520270829
+      Mac OS Cursor (Community)_1: 106262433
+      Mac OS Cursor (Community)_11: -1678675097
+      Mac OS Cursor (Community)_69: -1219201269
+      Mac OS Cursor (Community)_91: 1917162762
+      Mac OS Cursor (Community)_5: -1283980743
+      Mac OS Cursor (Community)_134: -1020789109
+      Mac OS Cursor (Community)_114: -1559747596
+      Mac OS Cursor (Community)_145: -1963645484
+      Mac OS Cursor (Community)_155: 237241294
+      Mac OS Cursor (Community)_107: -1773263780
+      Mac OS Cursor (Community)_123: -433921530
+      Mac OS Cursor (Community)_124: -1852847936
+      Mac OS Cursor (Community)_140: -364904900
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
