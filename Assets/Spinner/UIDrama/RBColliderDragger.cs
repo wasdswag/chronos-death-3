@@ -10,7 +10,7 @@ namespace UIDrama
     public abstract class RbColliderDragger : MonoBehaviour
     {
         protected Rigidbody2D Body;
-        protected float Width;
+        protected float Radius;
         protected float angle { get; set; }
 
         protected bool CursorIsOutCollider; 
@@ -58,7 +58,7 @@ namespace UIDrama
 
         private bool _isCollide, _isCursorOverlapped;
         private Vector3 _obstacleDirection;
-        private AllUIDramaHandler _uiHandler;
+        private static RbColliderDragger _hovered;
         
         private void Awake()
         {
@@ -73,16 +73,13 @@ namespace UIDrama
 
             _gameCamera = Camera.main;
             CursorHandler = FindObjectOfType<CursorHandler>();
+            Radius = _shapeWidth * .5f;
             
-            _uiHandler = FindObjectOfType<AllUIDramaHandler>();
-            _uiHandler.Interactables.Add(this);
-            
-            Width = _shapeWidth * .5f;
         }
         protected virtual void OnMouseEnter()
         {
             if (_isMoving == false && _collider.isTrigger == false)
-                _uiHandler.Overlapped = this;
+                _hovered = this;
             
             CursorHandler.SetCursor(Cursors.Over);
             if (mouseIsPressed) DisablePhysics();
@@ -99,8 +96,11 @@ namespace UIDrama
         protected virtual void OnMouseDrag()
         {
             Body.Sleep();
-            GetAngleDelta();
-            if (CursorIsOutCollider == false ) Spin();
+            if (CursorIsOutCollider || CursorIsOverSpinDeadZone()) 
+                TryMove();
+            else 
+                Spin();
+            
         }
         private void OnMouseOver()
         {
@@ -110,7 +110,7 @@ namespace UIDrama
         protected virtual void OnMouseExit()
         {
             if (_isMoving == false)
-                _uiHandler.Overlapped = null;
+                _hovered = null;
             
             _isSpinning = false;
             CursorIsOutCollider = true;
@@ -136,8 +136,8 @@ namespace UIDrama
             
             CursorHandler.SetCursor(Cursors.Regular);
         }
-
         public bool IsSpinning() => _isSpinning;
+        
         private void DisablePhysics()
         {
             Body.angularVelocity = 0f;
@@ -146,18 +146,18 @@ namespace UIDrama
         }
         protected virtual void Spin()
         {
-            if (CursorIsOverSpinDeadZone() == false)
-            {
-                transform.Rotate(Vector3.back, _delta);
-                angle += _delta;
-                _isSpinning = true;
-                CursorHandler.SetCursor(Cursors.Spin);
-            }
+            GetAngleDelta();
+
+            transform.Rotate(Vector3.back, _delta);
+            angle += _delta;
+            _isSpinning = true;
+            CursorHandler.SetCursor(Cursors.Spin);
         }
+        
         protected float DistanceToCursor() => Vector3.Distance(transform.position, GetCursorPosition());
         private bool CursorIsOverSpinDeadZone()
         {
-            bool isInCenter = DistanceToCursor() < Width * spinDeadZone;
+            bool isInCenter = DistanceToCursor() < Radius * spinDeadZone;
             if (isInCenter)
                 CursorHandler.SetCursor(Cursors.Move);
             
@@ -168,12 +168,25 @@ namespace UIDrama
             if (mouseIsPressed == false) return;
             if (CursorIsOutCollider || CursorIsOverSpinDeadZone()) Move();
         }
-        private bool IsOverlapping() => _uiHandler.Overlapped && _uiHandler.Overlapped != this;
+
+        protected virtual void Move()
+        {
+            if (!_isSpinning)
+            {  
+                CursorHandler.SetCursor(Cursors.Move);
+                _isMoving = true;
+                var desiredPosition = GetCursorPosition() - _cursorOffset;
+                var dir = (desiredPosition - transform.position).normalized;
+                
+                if (desiredPosition.IsOnTheScreen() && !IsBlocked(transform.position, dir, desiredPosition)) 
+                    Body.MovePosition(Vector3.MoveTowards(transform.position, desiredPosition,
+                        moveSpeed * Time.deltaTime));
+            }
+        }
         private bool IsBlocked(Vector2 origin, Vector2 direction, Vector3 cursorPos)
         {
             if (_collider.isTrigger || usePhysics == false) return false;
-            
-            if (IsOverlapping()) return true;
+            if (CursorIsOverObstacle()) return true;
             
             var outPosition = _collider.ClosestPoint(origin + direction * 100f);
             var hit = Physics2D.Raycast(outPosition, direction, 100f, collisionLayers);
@@ -191,20 +204,9 @@ namespace UIDrama
             }
             return false;
         }
-        protected virtual void Move()
-        {
-            if (!_isSpinning)
-            {  
-                CursorHandler.SetCursor(Cursors.Move);
-                _isMoving = true;
-                var desiredPosition = GetCursorPosition() - _cursorOffset;
-                var dir = (desiredPosition - transform.position).normalized;
-                
-                if (desiredPosition.IsOnTheScreen() && !IsBlocked(transform.position, dir, desiredPosition)) 
-                    Body.MovePosition(Vector3.MoveTowards(transform.position, desiredPosition,
-                        moveSpeed * Time.deltaTime));
-            }
-        }
+
+        private bool CursorIsOverObstacle() => _hovered && _hovered != this;
+
         private Vector3 GetCursorPosition()
         {
             var distanceToScreen = _gameCamera.WorldToScreenPoint(transform.position).z;
@@ -213,6 +215,7 @@ namespace UIDrama
             _cursorPosition = _gameCamera.ScreenToWorldPoint(mousePosition);
             return _cursorPosition;
         }
+        
         private void GetAngleDelta()
         {
             _currentAngle = GetAngle();

@@ -29,7 +29,7 @@ namespace UIDrama
         protected override void OnMouseExit()
         {
             base.OnMouseExit();
-            if (mouseIsPressed) Width = DistanceToCursor();
+            if (mouseIsPressed) Radius = DistanceToCursor();
         }
         public override void TryMove()
         {
@@ -37,7 +37,7 @@ namespace UIDrama
             if (mouseIsPressed)
             {
                 if (usePhysics && Body.isKinematic && !IsSpinning()) Body.isKinematic = false;
-                if (CursorIsOutCollider && DistanceToCursor() >= Width)
+                if (CursorIsOutCollider && DistanceToCursor() >= Radius)
                     Move();
             }
         }
