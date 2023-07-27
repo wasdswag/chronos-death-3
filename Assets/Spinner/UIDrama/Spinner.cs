@@ -47,14 +47,11 @@ namespace UIDrama
 
         public override void TryMove()
         {
-          
             if (mouseIsPressed)
             {
                 if (CursorIsOutCollider && DistanceToCursor() >= Radius)
                     Move();
             }
-        
-
         }
 
         protected override void OnMouseUp()
