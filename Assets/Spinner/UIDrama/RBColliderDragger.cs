@@ -24,8 +24,10 @@ namespace UIDrama
         [Space(10)] [Header("Physics settings")]
         [SerializeField] protected bool usePhysics;
         [ShowIf(nameof(usePhysics))] [SerializeField] protected float releaseGravity;
+
+        [SerializeField] private bool avoidObstaclesOnDrag;
         
-        [Serializable]
+        [Obsolete] [Serializable]
         private struct CollisionSettings
         {
             [Range(0.01f, 0.5f)] public float minDistance;
@@ -41,9 +43,10 @@ namespace UIDrama
             }
             
         }
-        [ShowIf(nameof(usePhysics))] [SerializeField] private LayerMask collisionLayers;
-        [ShowIf(nameof(usePhysics))] [SerializeField] private CollisionSettings collisionSettings = new CollisionSettings(0.05f, 1.6f, 0.8f, false);
+        [Obsolete] [ShowIf(nameof(usePhysics))] private CollisionSettings collisionSettings = new CollisionSettings(0.05f, 1.6f, 0.8f, false);
         
+        [ShowIf(nameof(usePhysics))] [SerializeField] private LayerMask collisionLayers;
+
         private Camera _gameCamera;
         private float _previousAngle, _currentAngle, _delta; 
 
@@ -172,37 +175,30 @@ namespace UIDrama
         protected virtual void Move()
         {
             if (!_isSpinning)
-            {  
+            {
                 CursorHandler.SetCursor(Cursors.Move);
                 _isMoving = true;
-                var desiredPosition = GetCursorPosition() - _cursorOffset;
-                var dir = (desiredPosition - transform.position).normalized;
-                
-                if (desiredPosition.IsOnTheScreen() && !IsBlocked(transform.position, dir, desiredPosition)) 
+                var cursorPosition = GetCursorPosition();
+                var desiredPosition = cursorPosition - _cursorOffset;
+                var dir = (transform.position - cursorPosition).normalized;
+
+                bool unblocked = !avoidObstaclesOnDrag || HasNoObstacleOnTheWay(transform.position, dir, cursorPosition);
+
+                if (desiredPosition.IsOnTheScreen() && unblocked) 
                     Body.MovePosition(Vector3.MoveTowards(transform.position, desiredPosition,
                         moveSpeed * Time.deltaTime));
             }
         }
-        private bool IsBlocked(Vector2 origin, Vector2 direction, Vector3 cursorPos)
+        private bool HasNoObstacleOnTheWay(Vector2 origin, Vector2 direction, Vector3 cursorPos)
         {
-            if (_collider.isTrigger || usePhysics == false) return false;
-            if (CursorIsOverObstacle()) return true;
-            
-            var outPosition = _collider.ClosestPoint(origin + direction * 100f);
-            var hit = Physics2D.Raycast(outPosition, direction, 100f, collisionLayers);
-            
-            if (hit.collider && hit.collider.isTrigger == false && hit.collider != _collider)
-            {
-                var other = hit.collider;
-                var closestPoint = other.ClosestPoint(outPosition);
-                var distance = Vector2.Distance(closestPoint, outPosition);
+            if (_collider.isTrigger || usePhysics == false) return true;
+            if (CursorIsOverObstacle()) return false;
 
-                var cursorIsOutside = !outPosition.RectContains(closestPoint, _cursorPosition, 
-                    collisionSettings.obstacleDetectionRadius, collisionSettings.isDebugging);
-                if (distance < collisionSettings.minDistance || (distance < collisionSettings.obstacleAvoidanceDistance && cursorIsOutside))
-                    return true;
-            }
-            return false;
+            var obstacle = Physics2D.Raycast(cursorPos, direction, 100f, collisionLayers).collider;
+            if (obstacle && obstacle.isTrigger == false && obstacle != _collider)
+                return false;
+            
+            return true;
         }
 
         private bool CursorIsOverObstacle() => _hovered && _hovered != this;
