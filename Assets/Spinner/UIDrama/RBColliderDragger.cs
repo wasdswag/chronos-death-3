@@ -19,7 +19,7 @@ namespace UIDrama
 
         [Header("Move and Spin settings")]
         [SerializeField] protected float moveSpeed = 3000f;
-        [SerializeField] [Range(0f, 1f)] private float spinDeadZone = 0.33f;
+        [SerializeField] [Range(0f, 2f)] private float spinDeadZone = 0.33f;
 
         [Space(10)] [Header("Physics settings")]
         [SerializeField] protected bool usePhysics;
@@ -98,6 +98,7 @@ namespace UIDrama
         }
         protected virtual void OnMouseDrag()
         {
+//            Debug.Log("Drag");
             Body.Sleep();
             if (CursorIsOutCollider || CursorIsOverSpinDeadZone()) 
                 TryMove();
@@ -147,6 +148,7 @@ namespace UIDrama
             Body.velocity = Vector2.zero;
             Body.Sleep();
         }
+        
         protected virtual void Spin()
         {
             GetAngleDelta();
