@@ -19,32 +19,14 @@ namespace UIDrama
 
         [Header("Move and Spin settings")]
         [SerializeField] protected float moveSpeed = 3000f;
-        [SerializeField] [Range(0f, 2f)] private float spinDeadZone = 0.33f;
+        [SerializeField] protected bool isRotatable;
+        [ShowIf(nameof(isRotatable))] [SerializeField] [Range(0f, 2f)] private float spinDeadZone = 0.33f;
 
         [Space(10)] [Header("Physics settings")]
         [SerializeField] protected bool usePhysics;
         [ShowIf(nameof(usePhysics))] [SerializeField] protected float releaseGravity;
 
         [SerializeField] private bool avoidObstaclesOnDrag;
-        
-        [Obsolete] [Serializable]
-        private struct CollisionSettings
-        {
-            [Range(0.01f, 0.5f)] public float minDistance;
-            [Range(0.01f, 3f)]   public float obstacleAvoidanceDistance;
-            [Range(0.1f, 2f)]    public float obstacleDetectionRadius; 
-            public bool isDebugging;
-            public CollisionSettings(float min, float avoidance, float radius, bool isDebug)
-            {
-                minDistance = min;
-                obstacleAvoidanceDistance = avoidance;
-                obstacleDetectionRadius = radius;
-                isDebugging = isDebug;
-            }
-            
-        }
-        [Obsolete] [ShowIf(nameof(usePhysics))] private CollisionSettings collisionSettings = new CollisionSettings(0.05f, 1.6f, 0.8f, false);
-        
         [ShowIf(nameof(usePhysics))] [SerializeField] private LayerMask collisionLayers;
 
         private Camera _gameCamera;
@@ -78,6 +60,8 @@ namespace UIDrama
             CursorHandler = FindObjectOfType<CursorHandler>();
             Radius = _shapeWidth * .5f;
             
+            if (isRotatable == false)
+                Body.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
         protected virtual void OnMouseEnter()
         {
@@ -101,7 +85,7 @@ namespace UIDrama
             Body.Sleep();
             if (CursorIsOutCollider || CursorIsOverSpinDeadZone()) 
                 TryMove();
-            else 
+            else if(isRotatable)
                 Spin();
             
         }
@@ -157,7 +141,6 @@ namespace UIDrama
             _isSpinning = true;
             CursorHandler.SetCursor(Cursors.Spin);
         }
-        
         protected float DistanceToCursor() => Vector3.Distance(transform.position, GetCursorPosition());
         private bool CursorIsOverSpinDeadZone()
         {
@@ -173,7 +156,7 @@ namespace UIDrama
             if (CursorIsOutCollider || CursorIsOverSpinDeadZone()) Move();
         }
 
-        protected virtual void Move()
+        protected void Move()
         {
             // if (!_isSpinning)
             // {
@@ -181,12 +164,13 @@ namespace UIDrama
                 _isMoving = true;
                 var cursorPosition = GetCursorPosition();
                 var desiredPosition = cursorPosition - _cursorOffset;
-                var dir = (transform.position - cursorPosition).normalized;
+                var position = transform.position;
+                var dir = (position - cursorPosition).normalized;
 
-                bool unblocked = !avoidObstaclesOnDrag || HasNoObstacleOnTheWay(transform.position, dir, cursorPosition);
+                bool unblocked = !avoidObstaclesOnDrag || HasNoObstacleOnTheWay(position, dir, cursorPosition);
 
                 if (desiredPosition.IsOnTheScreen() && unblocked) 
-                    Body.MovePosition(Vector3.MoveTowards(transform.position, desiredPosition,
+                    Body.MovePosition(Vector3.MoveTowards(position, desiredPosition,
                         moveSpeed * Time.deltaTime));
           //  }
         }

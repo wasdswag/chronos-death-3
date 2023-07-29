@@ -115,6 +115,7 @@ namespace UIDrama
 
         public virtual void OnExit()
         {
+            Debug.Log("EXIT");
             if (IsMoving == false) _hovered = null;
             
             CursorIsOutCollider = true;

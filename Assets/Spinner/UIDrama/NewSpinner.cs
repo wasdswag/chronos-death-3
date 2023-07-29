@@ -26,7 +26,7 @@ namespace UIDrama
         
         public override void OnDrag()
         {
-            Debug.Log("Dragging");
+           // Debug.Log("Dragging");
             if(CanMove()) base.OnDrag();
             else Spin();
         }

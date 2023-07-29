@@ -776,17 +776,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3000
+  isRotatable: 0
   spinDeadZone: 1
   usePhysics: 0
   releaseGravity: 5
+  avoidObstaclesOnDrag: 0
   collisionLayers:
     serializedVersion: 2
     m_Bits: 55
-  collisionSettings:
-    minDistance: 0.05
-    obstacleAvoidanceDistance: 1.6
-    obstacleDetectionRadius: 0.8
-    isDebugging: 0
   fixKnob: {fileID: 238530060}
 --- !u!1 &733488945
 GameObject:
@@ -1910,17 +1907,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3000
+  isRotatable: 0
   spinDeadZone: 1
   usePhysics: 0
   releaseGravity: 5
+  avoidObstaclesOnDrag: 0
   collisionLayers:
     serializedVersion: 2
     m_Bits: 55
-  collisionSettings:
-    minDistance: 0.05
-    obstacleAvoidanceDistance: 1.6
-    obstacleDetectionRadius: 0.8
-    isDebugging: 0
   fixKnob: {fileID: 976340245}
 --- !u!1 &1815076172 stripped
 GameObject:
@@ -2380,6 +2374,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Button
       objectReference: {fileID: 0}
+    - target: {fileID: 3533564016714446541, guid: 0ab87987425c04cbbb40c207d0cae515, type: 3}
+      propertyPath: m_Mass
+      value: 17.045786
+      objectReference: {fileID: 0}
+    - target: {fileID: 3533564016714446541, guid: 0ab87987425c04cbbb40c207d0cae515, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3533564016714446543, guid: 0ab87987425c04cbbb40c207d0cae515, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -2546,6 +2548,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 4481028714470430476, guid: e9e266a89e1a442c9b93f785daeea486, type: 3}
+      propertyPath: m_Mass
+      value: 44.955185
+      objectReference: {fileID: 0}
+    - target: {fileID: 4481028714470430476, guid: e9e266a89e1a442c9b93f785daeea486, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4481028714470430478, guid: e9e266a89e1a442c9b93f785daeea486, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -2590,6 +2600,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4481028714470430479, guid: e9e266a89e1a442c9b93f785daeea486, type: 3}
+      propertyPath: isRotatable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4481028714559516131, guid: e9e266a89e1a442c9b93f785daeea486, type: 3}
       propertyPath: m_Camera
       value: 
@@ -2607,10 +2621,22 @@ PrefabInstance:
       propertyPath: m_Name
       value: Spinner
       objectReference: {fileID: 0}
+    - target: {fileID: 8504814081399022744, guid: da26e3128597e43bb923e8114a8ec7ec, type: 3}
+      propertyPath: m_Mass
+      value: 10.660928
+      objectReference: {fileID: 0}
+    - target: {fileID: 8504814081399022744, guid: da26e3128597e43bb923e8114a8ec7ec, type: 3}
+      propertyPath: m_UseAutoMass
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8504814081399022747, guid: da26e3128597e43bb923e8114a8ec7ec, type: 3}
       propertyPath: shadow
       value: 
       objectReference: {fileID: 948023803}
+    - target: {fileID: 8504814081399022747, guid: da26e3128597e43bb923e8114a8ec7ec, type: 3}
+      propertyPath: avoidObstaclesOnDrag
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8504814081399022750, guid: da26e3128597e43bb923e8114a8ec7ec, type: 3}
       propertyPath: m_RootOrder
       value: 3

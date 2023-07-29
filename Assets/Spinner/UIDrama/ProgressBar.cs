@@ -29,13 +29,11 @@ namespace UIDrama
             _defaultPosition = transform.localPosition;
             _emptyPosition = _defaultPosition.x;
             _mass = _body.mass;
-           // SetProgress(1);
         }
 
 
         protected override void SetProgress(int percent)
         {
-//            Debug.Log("update progress");
             var t = Convert.ToSingle(percent) * 0.01f;
             var width = Mathf.Lerp(minValue, maxValue, t);
             var xOffset = Mathf.Lerp(_emptyPosition, _fullPosition, t);

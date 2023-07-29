@@ -32,7 +32,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4481028714559516142}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -104,7 +104,7 @@ GameObject:
   - component: {fileID: 4481028714095836510}
   - component: {fileID: 4481028714095836511}
   m_Layer: 5
-  m_Name: Text (TMP) (1)
+  m_Name: HeaderText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,7 +123,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4481028714559516142}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -259,7 +259,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4481028714559516142}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -332,7 +332,7 @@ GameObject:
   - component: {fileID: 4481028714439571361}
   - component: {fileID: 4481028714439571363}
   m_Layer: 0
-  m_Name: Text (TMP)
+  m_Name: MessageText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -351,7 +351,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4481028714559516142}
-  m_RootOrder: 0
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -821,17 +821,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3000
+  isRotatable: 0
   spinDeadZone: 0.569
   usePhysics: 1
   releaseGravity: 20
+  avoidObstaclesOnDrag: 0
   collisionLayers:
     serializedVersion: 2
     m_Bits: 55
-  collisionSettings:
-    minDistance: 0.036
-    obstacleAvoidanceDistance: 1.6
-    obstacleDetectionRadius: 0.8
-    isDebugging: 1
 --- !u!50 &4481028714470430476
 Rigidbody2D:
   serializedVersion: 4
@@ -915,10 +912,10 @@ RectTransform:
   m_LocalScale: {x: 0.013555556, y: 0.013555556, z: 0.013555556}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 4481028714439571374}
   - {fileID: 4481028713640345277}
   - {fileID: 4481028714405069245}
   - {fileID: 4481028714095836508}
+  - {fileID: 4481028714439571374}
   m_Father: {fileID: 4481028714470430478}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

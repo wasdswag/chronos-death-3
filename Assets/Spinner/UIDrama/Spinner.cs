@@ -18,7 +18,39 @@ namespace UIDrama
         
         private int _rotationCounter;
         private Coroutine _regress;
+        private Coroutine _auto;
 
+
+
+        public void StartAuto()
+        {
+            _auto = StartCoroutine(AutoSpinTutorial());
+        }
+
+        private IEnumerator AutoSpinTutorial()
+        {
+            int autoRotationCount = 16;
+            while (_rotationCounter < autoRotationCount)
+            {
+                var delta = 400f * Time.deltaTime;
+
+                angle += delta;
+                transform.Rotate(Vector3.back * delta);
+                Progress();
+                yield return null;
+            }
+
+            yield return new WaitForSeconds(1f);
+            _regress = StartCoroutine(OnSpinnerRelease());
+            
+        }
+        
+
+        protected override void Start()
+        {
+            isRotatable = true;
+            base.Start();
+        }
 
         protected override void OnMouseEnter()
         {

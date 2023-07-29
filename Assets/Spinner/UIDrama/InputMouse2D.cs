@@ -74,6 +74,7 @@ namespace UIDrama
             if (interactable != null)
             {
                 _dragged = interactable;
+                
                 interactable = null;
             }
         }
