@@ -6,7 +6,6 @@ namespace UIDrama
     public class Executable : RbColliderDragger
     {
         
-       // public Action OnDoubleClick;
         [SerializeField] private GameObject program;
         private IProgram iProgram;
         

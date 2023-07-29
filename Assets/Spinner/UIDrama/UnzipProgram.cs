@@ -9,6 +9,11 @@ namespace UIDrama
         [SerializeField] private GameObject expandedFolder;
         [SerializeField] private Spinner spinner;
         [SerializeField] private GameObject spinnerShadow;
+        
+        
+        // [SerializeField] private GameObject[] processingElements;
+        // [SerializeField] private GameObject[] resultElements;
+        
 
         public void Run()
         {
@@ -23,6 +28,8 @@ namespace UIDrama
         {
             expandedFolder.SetActive(true);
             dialogue.SetActive(false);
+            spinner.gameObject.SetActive(false);
+            spinnerShadow.SetActive(false);
         }
 
         protected override void SetProgress(int percent)

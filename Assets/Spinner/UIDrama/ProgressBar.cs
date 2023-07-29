@@ -20,7 +20,7 @@ namespace UIDrama
         private float _mass;
        
 
-        private void Start()
+        private void Awake()
         {
             _look = GetComponent<SpriteRenderer>();
             _collider = GetComponent<BoxCollider2D>();

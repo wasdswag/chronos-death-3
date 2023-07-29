@@ -20,16 +20,20 @@ namespace UIDrama
         private Coroutine _regress;
         private Coroutine _auto;
 
+        private bool _isAutoSpinning;
+
 
 
         public void StartAuto()
         {
             _auto = StartCoroutine(AutoSpinTutorial());
+            _isAutoSpinning = true;
         }
 
         private IEnumerator AutoSpinTutorial()
         {
             int autoRotationCount = 50;
+            yield return new WaitForSeconds(0.5f);
             while (_rotationCounter < autoRotationCount)
             {
                 var delta = 1000f * Time.deltaTime;
@@ -40,9 +44,9 @@ namespace UIDrama
                 yield return null;
             }
 
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.5f);
+            _isAutoSpinning = false;
             _regress = StartCoroutine(OnSpinnerRelease());
-            
         }
         
 
@@ -54,18 +58,21 @@ namespace UIDrama
 
         protected override void OnMouseEnter()
         {
+            if (_isAutoSpinning) return;
             base.OnMouseEnter();
             CursorIsOutCollider = false;
         }
 
         protected override void OnMouseExit()
         {
+            if (_isAutoSpinning) return;
             base.OnMouseExit();
             if (mouseIsPressed) Radius = DistanceToCursor();
         }
 
         protected override void OnMouseDown()
         {
+            if (_isAutoSpinning) return;
             base.OnMouseDown();
             if (_regress != null)
                 StopCoroutine(_regress);
@@ -89,6 +96,7 @@ namespace UIDrama
 
         protected override void OnMouseUp()
         {
+            if (_isAutoSpinning) return;
             base.OnMouseUp();
             _regress = StartCoroutine(OnSpinnerRelease());
         }
