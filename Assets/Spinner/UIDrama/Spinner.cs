@@ -29,10 +29,10 @@ namespace UIDrama
 
         private IEnumerator AutoSpinTutorial()
         {
-            int autoRotationCount = 16;
+            int autoRotationCount = 50;
             while (_rotationCounter < autoRotationCount)
             {
-                var delta = 400f * Time.deltaTime;
+                var delta = 1000f * Time.deltaTime;
 
                 angle += delta;
                 transform.Rotate(Vector3.back * delta);
