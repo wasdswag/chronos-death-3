@@ -98,7 +98,6 @@ namespace UIDrama
         }
         protected virtual void OnMouseDrag()
         {
-//            Debug.Log("Drag");
             Body.Sleep();
             if (CursorIsOutCollider || CursorIsOverSpinDeadZone()) 
                 TryMove();
@@ -140,6 +139,7 @@ namespace UIDrama
             
             CursorHandler.SetCursor(Cursors.Regular);
         }
+        
         public bool IsSpinning() => _isSpinning;
         
         private void DisablePhysics()
@@ -152,7 +152,6 @@ namespace UIDrama
         protected virtual void Spin()
         {
             GetAngleDelta();
-
             transform.Rotate(Vector3.back, _delta);
             angle += _delta;
             _isSpinning = true;
@@ -176,8 +175,8 @@ namespace UIDrama
 
         protected virtual void Move()
         {
-            if (!_isSpinning)
-            {
+            // if (!_isSpinning)
+            // {
                 CursorHandler.SetCursor(Cursors.Move);
                 _isMoving = true;
                 var cursorPosition = GetCursorPosition();
@@ -189,7 +188,7 @@ namespace UIDrama
                 if (desiredPosition.IsOnTheScreen() && unblocked) 
                     Body.MovePosition(Vector3.MoveTowards(transform.position, desiredPosition,
                         moveSpeed * Time.deltaTime));
-            }
+          //  }
         }
         private bool HasNoObstacleOnTheWay(Vector2 origin, Vector2 direction, Vector3 cursorPos)
         {

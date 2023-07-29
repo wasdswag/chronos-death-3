@@ -31,6 +31,7 @@ namespace UIDrama
             base.OnMouseExit();
             if (mouseIsPressed) Radius = DistanceToCursor();
         }
+        
         public override void TryMove()
         {
             sand.GrainsInsideTheBowl();

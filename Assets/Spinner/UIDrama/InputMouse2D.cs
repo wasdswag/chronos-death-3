@@ -12,7 +12,10 @@ namespace UIDrama
         void OnDrag();
         void OnUp();
         void OnExit();
+        
         Vector3 Position { get; }
+        Vector3 CursorPosition { get; set; }
+        
     }
     public class InputMouse2D : MonoBehaviour
     {
@@ -20,40 +23,19 @@ namespace UIDrama
         
         [SerializeField] private LayerMask interactables;
         [SerializeField] private Camera gameCamera;
-        private IMouseInteractable _current, _previous;
+        private IMouseInteractable _current, _previous, _dragged;
 
-        private enum _conditions
-        {   
-            Enter,
-            Down,
-            Up,
-            Drag
-        }
-
-        private Dictionary<_conditions, bool> _states = new Dictionary<_conditions, bool>();
-
-
-        private void Awake()
-        {
-            _states.Add(_conditions.Enter, _previous!=_current);
-            _states.Add(_conditions.Down, Input.GetMouseButtonDown(0));
-            _states.Add(_conditions.Drag, Input.GetMouseButton(0));
-            _states.Add(_conditions.Up, Input.GetMouseButtonUp(0));
-        }
 
         private void Update()
         {
             var mousePosition = Input.mousePosition;
             var hit = Physics2D.Raycast(GetCursorPosition(transform.position, mousePosition), Vector2.up, interactables);
             
-            if (hit && hit.collider.TryGetComponent(out IMouseInteractable interactable))
+            if (hit && hit.collider.TryGetComponent(out IMouseInteractable interactable) && _dragged == null)
             {
-                CursorPosition = GetCursorPosition(interactable.Position, mousePosition);
-                
-                _previous = _current;
-                _current = interactable;
-                
-                
+                 interactable.CursorPosition = GetCursorPosition(interactable.Position, mousePosition);
+                 _previous = _current;
+                 _current = interactable;
                 
                 if (_current != _previous)
                 {
@@ -63,24 +45,40 @@ namespace UIDrama
                 
                 _current.OnOver();
 
-                if (Input.GetMouseButtonDown(0))
-                    _current.OnDown();
-
-                if (Input.GetMouseButton(0))
-                    _current.OnDrag();
-
-                if (Input.GetMouseButtonUp(0))
-                    _current.OnUp();
+                if (Input.GetMouseButtonDown(0)) _current.OnDown();
+                if (Input.GetMouseButton(0)) _current.OnDrag();
+                if (Input.GetMouseButtonUp(0))  _current.OnUp();
             }
             
+            else if (Input.GetMouseButton(0))
+            {
+                SwapCashed(ref _current);
+                OnHitExit(ref _previous);
+
+                if (_dragged != null)
+                {
+                    _dragged.OnDrag();
+                    _dragged.CursorPosition = GetCursorPosition(_dragged.Position, mousePosition);
+                }
+            }
             else
             {
                 OnHitExit(ref _current);
                 OnHitExit(ref _previous);
+                _dragged = null;
+            }
+        }
+
+        private void SwapCashed(ref IMouseInteractable interactable)
+        {
+            if (interactable != null)
+            {
+                _dragged = interactable;
+                interactable = null;
             }
         }
         
-        void OnHitExit(ref IMouseInteractable interactable)
+        private void OnHitExit(ref IMouseInteractable interactable)
         {
             if (interactable != null)
             {
@@ -98,8 +96,5 @@ namespace UIDrama
             return cursorPosition;
         }
         
-
-
-
     }
 }
