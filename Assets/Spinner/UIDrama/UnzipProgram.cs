@@ -4,33 +4,28 @@ namespace UIDrama
 {
     public class UnzipProgram : ProgressReactable, IProgram
     {
+        [field:SerializeField] public GameObject[] UIDramaElements { get; set; }
         public bool IsRunning { get; set; }
-        [SerializeField] private GameObject dialogue;
         [SerializeField] private GameObject expandedFolder;
         [SerializeField] private Spinner spinner;
-        [SerializeField] private GameObject spinnerShadow;
         
         
-        // [SerializeField] private GameObject[] processingElements;
-        // [SerializeField] private GameObject[] resultElements;
-        
-
         public void Run()
         {
-            dialogue.SetActive(true);
-            spinner.gameObject.SetActive(true);
-            spinnerShadow.SetActive(true);
+            foreach (var uiObj in UIDramaElements)
+                uiObj.SetActive(true);
+            
             spinner.StartAuto();
             IsRunning = true;
         }
-        
+
         public void Stop()
         {
             expandedFolder.SetActive(true);
-            dialogue.SetActive(false);
-            spinner.gameObject.SetActive(false);
-            spinnerShadow.SetActive(false);
+            foreach (var uiObj in UIDramaElements)
+                uiObj.SetActive(false);
         }
+
 
         protected override void SetProgress(int percent)
         {
