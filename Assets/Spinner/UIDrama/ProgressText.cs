@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 
 namespace UIDrama
 {
-    [RequireComponent(typeof(TextMeshPro))]
+    [RequireComponent(typeof(TextMeshProUGUI))]
     [ExecuteAlways]
     public class ProgressText : ProgressReactable
     {
@@ -23,13 +23,13 @@ namespace UIDrama
         }
 
         [SerializeField] Message[] _messages;
-        private TextMeshPro _status;
+        private TextMeshProUGUI _status;
         private int _lastPercent;
 
 
         private void Start()
         {
-            _status = GetComponent<TextMeshPro>();
+            _status = GetComponent<TextMeshProUGUI>();
             for (int i = 0; i < _messages.Length - 1; i++)
                 _messages[i + 1].StartPercent = _messages[i].EndPercent;
             
