@@ -1,5 +1,6 @@
 using NaughtyAttributes;
 using UnityEngine;
+using UnityEngine.AI;
 
 
 namespace UIDrama
@@ -25,6 +26,7 @@ namespace UIDrama
         [ShowIf(nameof(usePhysics))] [SerializeField] protected float releaseGravity;
 
         [SerializeField] private bool avoidObstaclesOnDrag;
+        [ShowIf(nameof(avoidObstaclesOnDrag))] [SerializeField] private bool avoidOnlyKinematics;
         [ShowIf(nameof(usePhysics))] [SerializeField] private LayerMask collisionLayers;
 
         private Camera _gameCamera;
@@ -178,7 +180,10 @@ namespace UIDrama
             if (CursorIsOverObstacle()) return false;
 
             var obstacle = Physics2D.Raycast(cursorPos, direction, 100f, collisionLayers).collider;
-            if (obstacle && obstacle.isTrigger == false && obstacle != _collider)
+            if (avoidOnlyKinematics && obstacle.TryGetComponent(out Rigidbody2D body) && body.isKinematic)
+                return false;
+            
+            else if (obstacle && obstacle.isTrigger == false && obstacle != _collider)
                 return false;
             
             return true;

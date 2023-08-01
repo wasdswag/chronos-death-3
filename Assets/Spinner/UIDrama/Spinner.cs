@@ -140,6 +140,9 @@ namespace UIDrama
             Body.angularVelocity = 0f;
         }
 
-
+        private void OnDisable()
+        {
+            _rotationCounter = 0;
+        }
     }
 }

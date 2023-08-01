@@ -17,7 +17,8 @@ namespace UIDrama
         protected override void Start()
         {
             base.Start();
-            iProgram = program.GetComponent<IProgram>();
+            if(program != null)
+                iProgram = program.GetComponent<IProgram>();
         }
 
         protected override void OnMouseDown()

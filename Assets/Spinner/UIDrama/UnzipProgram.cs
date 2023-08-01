@@ -21,9 +21,13 @@ namespace UIDrama
 
         public void Stop()
         {
-            expandedFolder.SetActive(true);
-            foreach (var uiObj in UIDramaElements)
-                uiObj.SetActive(false);
+            if (IsRunning)
+            {
+                expandedFolder.SetActive(true);
+                foreach (var uiObj in UIDramaElements)
+                    uiObj.SetActive(false);
+                IsRunning = false;
+            }
         }
 
 
