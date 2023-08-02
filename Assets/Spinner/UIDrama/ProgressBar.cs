@@ -28,7 +28,7 @@ namespace UIDrama
 
             _defaultPosition = transform.localPosition;
             _emptyPosition = _defaultPosition.x;
-            _mass = _body.mass;
+           // _mass = _body.mass;
         }
 
 
@@ -42,7 +42,7 @@ namespace UIDrama
         
             _look.size = new Vector2(width, _look.size.y);
             _collider.size = new Vector2(_look.size.x, _collider.size.y);
-            _body.mass = _mass * t;
+           // _body.mass = _mass * t;
         }
 
     }
