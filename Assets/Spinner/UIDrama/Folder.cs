@@ -11,7 +11,9 @@ namespace UIDrama
         [SerializeField] private File[] innerFiles;
         [SerializeField] private List<FolderBoundaries> boundaries;
         private IFile [] _files;
-        
+
+        [SerializeField] private AudioSource audioSource;
+        [SerializeField] private AudioClip moveSound;
         
 
         private void Awake()
@@ -23,11 +25,27 @@ namespace UIDrama
                 innerFiles[i].SetRootFolder(this);
             }
         }
+        
 
         protected override void SetProgress(int percent)
         {
-            
+          
         }
+
+        public bool CheckEveryFileExist()
+        {
+            foreach (var file in _files)
+            {
+                if (!IsFileInside(file))
+                {
+                    Debug.Log($"no such file or directory: C://ChronosDeath/{file.Filename} make sure the {file.Filename} is within the folder");
+                    return false;
+                }
+            }
+
+            return true;
+        }
+        
 
         public bool IsFileInside(IFile file)
         {
@@ -45,6 +63,9 @@ namespace UIDrama
         {
             return boundaries.Contains(bound);
         }
+
+        public void PlayMoveSound() => audioSource.PlayOneShot(moveSound);
+        
         
     }
 }

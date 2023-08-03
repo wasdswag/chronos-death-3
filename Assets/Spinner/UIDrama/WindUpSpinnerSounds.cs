@@ -9,9 +9,9 @@ namespace UIDrama
         private AudioSource _audioSource;
 
         private void Start() => _audioSource = GetComponent<AudioSource>();
+        
         protected override void SetProgress(int percent) => PlaySound(percent);
-
-
+        
         private void PlaySound(int value)
         {
             AudioClip clip = value < 100 ? clips[soundIndex] : clips[3];
