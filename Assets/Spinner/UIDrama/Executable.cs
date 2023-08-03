@@ -23,8 +23,10 @@ namespace UIDrama
 
         protected override void OnMouseDown()
         {
+            
             base.OnMouseDown();
             if (iProgram == null) return;
+            
             
             clickCount++;
             if (clickCount == 2 && iProgram.IsRunning == false)

@@ -25,6 +25,5 @@ namespace UIDrama
 
         protected abstract void SetProgress(int percent);
      
-
     }
 }

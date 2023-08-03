@@ -16,6 +16,8 @@ namespace UIDrama
         protected CursorHandler CursorHandler;
         protected bool mouseIsPressed { get; private set; }
 
+        protected Collider2D SelfCollider { get; private set; }
+
         [Header("Move and Spin settings")]
         [SerializeField] protected float moveSpeed = 3000f;
         [SerializeField] protected bool isRotatable;
@@ -48,6 +50,7 @@ namespace UIDrama
         private void Awake()
         {
             _collider = GetComponent<Collider2D>();
+            SelfCollider = _collider;
             var bounds = _collider.bounds;
             _shapeWidth = bounds.max.x - bounds.min.x;
         }
@@ -180,7 +183,7 @@ namespace UIDrama
             if (CursorIsOverObstacle()) return false;
 
             var obstacle = Physics2D.Raycast(cursorPos, direction, 100f, collisionLayers).collider;
-            if (avoidOnlyKinematics && obstacle.TryGetComponent(out Rigidbody2D body) && body.isKinematic)
+            if (obstacle != null && avoidOnlyKinematics && obstacle.TryGetComponent(out Rigidbody2D body) && body.isKinematic)
                 return false;
             
             else if (obstacle && obstacle.isTrigger == false && obstacle != _collider)

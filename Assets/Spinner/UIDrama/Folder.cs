@@ -7,7 +7,7 @@ namespace UIDrama
     {
         [field: SerializeField] public GameObject[] UIDramaElements { get; set; }
         public bool IsRunning { get; set; }
-        [SerializeField] private Executable[] innerFiles;
+        [SerializeField] private File[] innerFiles;
         private IFile [] _files;
 
         private void Awake()
