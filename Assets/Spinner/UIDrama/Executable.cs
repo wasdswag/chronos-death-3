@@ -5,15 +5,15 @@ namespace UIDrama
 {
     public class Executable : RbColliderDragger, IFile
     {
-
         [SerializeField] private TextMeshPro filename;
         [SerializeField] private GameObject program;
-        private IProgram iProgram;
-        
-        
-        private int clickCount;
-        private bool isExecuting;
 
+        public string Filename => filename.text;
+        public Vector2 Position => transform.position;
+       
+        private IProgram iProgram;
+        private int clickCount;
+        
         protected override void Start()
         {
             base.Start();
@@ -42,7 +42,7 @@ namespace UIDrama
             clickCount = 0;
         }
 
-        public string Filename => filename.text;
+    
     }
 
    

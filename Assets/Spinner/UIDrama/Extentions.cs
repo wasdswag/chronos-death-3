@@ -14,7 +14,7 @@ namespace UIDrama
             return true;
         }
 
-        public static bool RectContains(this Vector2 first, Vector2 second, Vector2 toCheck, float threshold, bool isDebugging)
+        public static bool RectContains(this Vector2 first, Vector2 second, Vector2 toCheck, float threshold, bool isDebugging = false)
         {
             
             var xBounds = first.x >= second.x ? 
