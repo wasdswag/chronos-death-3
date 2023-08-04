@@ -11,12 +11,14 @@ namespace UIDrama
         
         public virtual void Run()
         {
+            IsRunning = true;
             foreach (var uiObj in UIDramaElements)
                 uiObj.SetActive(true);
         }
 
         public virtual void Stop()
         {
+            IsRunning = false;
             foreach (var uiObj in UIDramaElements)
                 uiObj.SetActive(false);
         }

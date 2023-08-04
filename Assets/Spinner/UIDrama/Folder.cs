@@ -14,7 +14,7 @@ namespace UIDrama
 
         [SerializeField] private AudioSource audioSource;
         [SerializeField] private AudioClip moveSound;
-        
+
 
         private void Awake()
         {
@@ -26,24 +26,19 @@ namespace UIDrama
             }
         }
         
-
         protected override void SetProgress(int percent)
         {
           
         }
 
-        public bool CheckEveryFileExist()
+        public string GetMissingFiles()
         {
             foreach (var file in _files)
             {
                 if (!IsFileInside(file))
-                {
-                    Debug.Log($"no such file or directory: C://ChronosDeath/{file.Filename} make sure the {file.Filename} is within the folder");
-                    return false;
-                }
+                    return file.Filename;
             }
-
-            return true;
+            return null;
         }
         
 

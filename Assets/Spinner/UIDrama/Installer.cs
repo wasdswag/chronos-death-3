@@ -7,21 +7,38 @@ namespace UIDrama
     {
         [SerializeField] private Button playButton;
         [SerializeField] private Folder folder;
+        [SerializeField] private Error error;
         
         private bool playButtonIsPressed;
+        private int _progress;
         private void Awake() => playButton.onClick.AddListener(IsDone);
         
         
         protected override void SetProgress(int percent)
         {
-            if (percent >= 100)
+            _progress = percent;
+        }
+        
+        private void IsDone()
+        {
+            if(!playButton.interactable && _progress < 100) return;
+            var missing = folder.GetMissingFiles();
+            
+            if (missing != null)
             {
-                if (playButtonIsPressed && folder.CheckEveryFileExist())
-                    Stop();
+                var message =
+                    $"No such file or directory: ~/ChronosDeath3/{missing} make sure file \"{missing}\" is placed in root directory";
+                error.SetMessage(message);
+                if(!error.IsRunning) error.Run();
+            }
+            else
+            {
+                if(error.IsRunning) error.Stop();
+                Stop();
+                IsRunning = false;
+                playButtonIsPressed = true;
             }
         }
 
-        private void IsDone() => playButtonIsPressed = true;
-        
     }
 }
