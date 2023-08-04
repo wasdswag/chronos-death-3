@@ -7631,6 +7631,17 @@ MonoBehaviour:
   - {fileID: 235257848}
   audioSource: {fileID: 2132795537}
   moveSound: {fileID: 8300000, guid: d9d004276c0d542a996e55298ff6bb78, type: 3}
+--- !u!114 &1413783730 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2868074904699848987, guid: 86527175ef829479e88aafc589a52fb9, type: 3}
+  m_PrefabInstance: {fileID: 1623114829}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4feacb76b98f24a29947b90632beabc2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1417546630
 GameObject:
   m_ObjectHideFlags: 0
@@ -7795,8 +7806,8 @@ MonoBehaviour:
   - {fileID: 96024399}
   - {fileID: 948023802}
   - {fileID: 431721194}
-  cancel: {fileID: 0}
-  progressBar: {fileID: 0}
+  cancel: {fileID: 7608670764231438114}
+  progressBar: {fileID: 1413783730}
   expandedFolder: {fileID: 1745911368}
   spinner: {fileID: 96024406}
 --- !u!4 &1449260464
