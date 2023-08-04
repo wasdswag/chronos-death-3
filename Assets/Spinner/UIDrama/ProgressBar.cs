@@ -3,7 +3,7 @@ using UnityEngine;
 
 namespace UIDrama
 {
-    public class ProgressBar : ProgressReactable
+    public class ProgressBar : MonoBehaviour
     {
         [SerializeField] private float maxValue = 14f;
         [SerializeField] private float minValue = 0.5f;
@@ -28,11 +28,10 @@ namespace UIDrama
 
             _defaultPosition = transform.localPosition;
             _emptyPosition = _defaultPosition.x;
-           // _mass = _body.mass;
         }
 
 
-        protected override void SetProgress(int percent)
+        public void SetProgress(int percent)
         {
             var t = Convert.ToSingle(percent) * 0.01f;
             var width = Mathf.Lerp(minValue, maxValue, t);
@@ -42,7 +41,6 @@ namespace UIDrama
         
             _look.size = new Vector2(width, _look.size.y);
             _collider.size = new Vector2(_look.size.x, _collider.size.y);
-           // _body.mass = _mass * t;
         }
 
     }

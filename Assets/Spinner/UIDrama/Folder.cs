@@ -25,12 +25,7 @@ namespace UIDrama
                 innerFiles[i].SetRootFolder(this);
             }
         }
-        
-        protected override void SetProgress(int percent)
-        {
-          
-        }
-
+  
         public string GetMissingFiles()
         {
             foreach (var file in _files)

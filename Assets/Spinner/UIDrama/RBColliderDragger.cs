@@ -135,7 +135,6 @@ namespace UIDrama
             Body.velocity = Vector2.zero;
             Body.Sleep();
         }
-        
         protected virtual void Spin()
         {
             GetAngleDelta();
@@ -144,7 +143,9 @@ namespace UIDrama
             _isSpinning = true;
             CursorHandler.SetCursor(Cursors.Spin);
         }
+        
         protected float DistanceToCursor() => Vector3.Distance(transform.position, GetCursorPosition());
+        
         private bool CursorIsOverSpinDeadZone()
         {
             bool isInCenter = DistanceToCursor() < Radius * spinDeadZone;
@@ -161,22 +162,21 @@ namespace UIDrama
 
         protected void Move()
         {
-            // if (!_isSpinning)
-            // {
-                CursorHandler.SetCursor(Cursors.Move);
-                _isMoving = true;
-                var cursorPosition = GetCursorPosition();
-                var desiredPosition = cursorPosition - _cursorOffset;
-                var position = transform.position;
-                var dir = (position - cursorPosition).normalized;
+            CursorHandler.SetCursor(Cursors.Move);
+            _isMoving = true;
+            var cursorPosition = GetCursorPosition();
+            var desiredPosition = cursorPosition - _cursorOffset;
+            var position = transform.position;
+            var dir = (position - cursorPosition).normalized;
 
-                bool unblocked = !avoidObstaclesOnDrag || HasNoObstacleOnTheWay(position, dir, cursorPosition);
+            bool unblocked = !avoidObstaclesOnDrag || HasNoObstacleOnTheWay(position, dir, cursorPosition);
 
-                if (desiredPosition.IsOnTheScreen() && unblocked) 
-                    Body.MovePosition(Vector3.MoveTowards(position, desiredPosition,
+            if (desiredPosition.IsOnTheScreen() && unblocked) 
+                Body.MovePosition(Vector3.MoveTowards(position, desiredPosition,
                         moveSpeed * Time.deltaTime));
-          //  }
         }
+        
+        
         private bool HasNoObstacleOnTheWay(Vector2 origin, Vector2 direction, Vector3 cursorPos)
         {
             if (_collider.isTrigger || usePhysics == false) return true;
@@ -209,6 +209,7 @@ namespace UIDrama
             _delta = Mathf.DeltaAngle(_previousAngle, _currentAngle);
             _previousAngle = _currentAngle;
         }
+
         private float GetAngle()
         {
             Vector3 relatedPosition = transform.position - GetCursorPosition();

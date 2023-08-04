@@ -7,8 +7,7 @@ namespace UIDrama
         
         [field: SerializeField] public GameObject[] UIDramaElements { get; set; }
         public bool IsRunning { get; set; }
-      
-        
+
         public virtual void Run()
         {
             IsRunning = true;

@@ -59,15 +59,15 @@ namespace UIDrama
             }
         }
 
-        void Update()
-        {
-            var mouseScroll = Input.GetAxis("Mouse ScrollWheel");
-            if (mouseScroll >= 0.1f || mouseScroll <= -0.1f)
-            {
-                gameCamera.orthographicSize += mouseScroll * zoomStep * Time.deltaTime;
-                UpdateScreenFrame();
-            }
-        }
+        // void Update()
+        // {
+        //     var mouseScroll = Input.GetAxis("Mouse ScrollWheel");
+        //     if (mouseScroll >= 0.1f || mouseScroll <= -0.1f)
+        //     {
+        //         gameCamera.orthographicSize += mouseScroll * zoomStep * Time.deltaTime;
+        //         UpdateScreenFrame();
+        //     }
+        // }
 
         public void UpdateScreenFrame()
         {

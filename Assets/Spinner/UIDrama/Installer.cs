@@ -6,22 +6,25 @@ namespace UIDrama
     public class Installer : Program
     {
         [SerializeField] private Button playButton;
+        [SerializeField] private ProgressBar progressBar;
+        
         [SerializeField] private Folder folder;
         [SerializeField] private Error error;
         
         private bool playButtonIsPressed;
-        private int _progress;
         private void Awake() => playButton.onClick.AddListener(IsDone);
-        
+
         
         protected override void SetProgress(int percent)
         {
-            _progress = percent;
+            progressBar.SetProgress(percent);
+            playButton.interactable = percent >= 100;
         }
-        
+
+
         private void IsDone()
         {
-            if(!playButton.interactable && _progress < 100) return;
+            if(!playButton.interactable && Progress < 100) return;
             var missing = folder.GetMissingFiles();
             
             if (missing != null)
