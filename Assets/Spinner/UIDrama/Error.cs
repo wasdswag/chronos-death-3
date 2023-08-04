@@ -3,7 +3,7 @@ using TMPro;
 
 namespace UIDrama
 {
-    public class Error : Program
+    public class Error : PopupWindow
     {
         [SerializeField] private TextMeshProUGUI message;
         
