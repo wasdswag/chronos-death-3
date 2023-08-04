@@ -6,7 +6,7 @@ namespace UIDrama
 {
     [RequireComponent(typeof(TextMeshProUGUI))]
     [ExecuteAlways]
-    public class ProgressText : ProgressReactable
+    public class ProgressText : MonoBehaviour
     {
         [System.Serializable]
         private struct Message
@@ -26,33 +26,37 @@ namespace UIDrama
         private TextMeshProUGUI _status;
         private int _lastPercent;
 
+        private bool _isReady;
+
 
         private void Start()
         {
             _status = GetComponent<TextMeshProUGUI>();
             for (int i = 0; i < _messages.Length - 1; i++)
                 _messages[i + 1].StartPercent = _messages[i].EndPercent;
-            
+
+            _isReady = true;
             SetProgress(0);
 
         }
 
-        protected override void SetProgress(int percent)
+        public void SetProgress(int percent)
         {
-            foreach (var message in _messages)
+            if (_isReady)
             {
-                if (percent >= message.StartPercent && percent < message.EndPercent)
+                foreach (var message in _messages)
                 {
-                    var status = percent > _lastPercent
-                        ? $"{message.progressHeader}\n<size=85%>{message.progressStatus}"
-                        : $"{message.regressHeader}\n<size=85%>{message.regressStatus}";
-                    
-                    _status.text = status;
+                    if (percent >= message.StartPercent && percent < message.EndPercent)
+                    {
+                        var status = percent > _lastPercent
+                            ? $"{message.progressHeader}\n<size=85%>{message.progressStatus}"
+                            : $"{message.regressHeader}\n<size=85%>{message.regressStatus}";
+
+                        _status.text = status;
+                    }
                 }
+                _lastPercent = percent;
             }
-
-            _lastPercent = percent;
-
         }
     }
 }

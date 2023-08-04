@@ -18,6 +18,8 @@ namespace UIDrama
         private Rigidbody2D _body;
         private Vector3 _defaultPosition;
         private float _mass;
+
+        private bool _isReady;
        
 
         private void Awake()
@@ -28,19 +30,24 @@ namespace UIDrama
 
             _defaultPosition = transform.localPosition;
             _emptyPosition = _defaultPosition.x;
+
+            _isReady = true;
         }
 
 
         public void SetProgress(int percent)
         {
-            var t = Convert.ToSingle(percent) * 0.01f;
-            var width = Mathf.Lerp(minValue, maxValue, t);
-            var xOffset = Mathf.Lerp(_emptyPosition, _fullPosition, t);
+            if (_isReady)
+            {
+                var t = Convert.ToSingle(percent) * 0.01f;
+                var width = Mathf.Lerp(minValue, maxValue, t);
+                var xOffset = Mathf.Lerp(_emptyPosition, _fullPosition, t);
 
-            transform.localPosition = new Vector3(xOffset, _defaultPosition.y, _defaultPosition.z);
-        
-            _look.size = new Vector2(width, _look.size.y);
-            _collider.size = new Vector2(_look.size.x, _collider.size.y);
+                transform.localPosition = new Vector3(xOffset, _defaultPosition.y, _defaultPosition.z);
+
+                _look.size = new Vector2(width, _look.size.y);
+                _collider.size = new Vector2(_look.size.x, _collider.size.y);
+            }
         }
 
     }

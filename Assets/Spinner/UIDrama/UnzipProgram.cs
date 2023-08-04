@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -10,8 +11,15 @@ namespace UIDrama
         
         [SerializeField] private GameObject expandedFolder;
         [SerializeField] private Spinner spinner;
-        
-        
+
+        [SerializeField] private PopupWindow onCancel;
+
+
+        private void Awake()
+        {
+            cancel.onClick.AddListener(onCancel.Run);
+        }
+
 
         public override void Run()
         {

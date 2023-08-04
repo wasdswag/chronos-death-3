@@ -7,6 +7,7 @@ namespace UIDrama
     {
         [SerializeField] private Button playButton;
         [SerializeField] private ProgressBar progressBar;
+        [SerializeField] private ProgressText progressText;
         
         [SerializeField] private Folder folder;
         [SerializeField] private Error error;
@@ -18,6 +19,7 @@ namespace UIDrama
         protected override void SetProgress(int percent)
         {
             progressBar.SetProgress(percent);
+            progressText.SetProgress(percent);
             playButton.interactable = percent >= 100;
         }
 

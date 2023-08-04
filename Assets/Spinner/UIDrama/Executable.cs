@@ -6,7 +6,7 @@ namespace UIDrama
     public class Executable : RbColliderDragger, IFile
     {
         [SerializeField] private TextMeshPro filename;
-        [SerializeField] private GameObject program;
+        [SerializeField] private Program program;
 
         public string Filename => filename.text;
         public Vector2 Position => transform.position;
