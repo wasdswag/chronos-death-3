@@ -15,9 +15,9 @@ EditorBuildSettings:
     path: Assets/Forest/Forrest.unity
     guid: 571827695597b49a3a022a08e2f06448
   - enabled: 0
-    path: Assets/Spinner/MacSpinner_bkp.unity
+    path: Assets/_UI_Drama/_Scenes/MacSpinner_bkp.unity
     guid: 199fd0551f6ca49509e4fa610827ac3a
   - enabled: 0
-    path: Assets/Spinner/WinSpinner.unity
+    path: Assets/_UI_Drama/_Scenes/WinSpinner.unity
     guid: 9ed3eb0ce937e4a8b86358fbba81a49d
   m_configObjects: {}
