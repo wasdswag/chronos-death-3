@@ -91,16 +91,13 @@ namespace UIDrama
                 if (CursorIsOutCollider && DistanceToCursor() >= Radius)
                     Move();
             }
-
         }
-
         protected override void OnMouseUp()
         {
             if (_isAutoSpinning) return;
             base.OnMouseUp();
             _regress = StartCoroutine(OnSpinnerRelease());
         }
-
 
         private void Progress()
         {

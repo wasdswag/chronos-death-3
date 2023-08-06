@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37312013, g: 0.3807403, b: 0.35872707, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -608,7 +608,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869cbd0b6995e432d982ce877d76784d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.33
@@ -806,7 +805,7 @@ Transform:
   m_Children:
   - {fileID: 185073725}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &63158254
 GameObject:
@@ -839,7 +838,7 @@ Transform:
   m_Children:
   - {fileID: 1049259187}
   m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &63158256
 MonoBehaviour:
@@ -1650,7 +1649,7 @@ GameObject:
   - component: {fileID: 133582127}
   - component: {fileID: 133582126}
   - component: {fileID: 133582125}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BowlUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1947,7 +1946,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1cff1efe1d4b04aa63b755d750f6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 1
@@ -3120,7 +3118,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27affc796e8c4ac89b438f3e70d6c1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.33
@@ -3635,7 +3632,7 @@ Transform:
   m_Children:
   - {fileID: 253756953}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &431721200
 MonoBehaviour:
@@ -3649,7 +3646,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72d85985e53445fa8fea506f53061702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.33
@@ -3748,7 +3744,7 @@ GameObject:
   m_Component:
   - component: {fileID: 445994665}
   - component: {fileID: 445994666}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3810,7 +3806,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -14
+  m_SortingOrder: -250
   m_Sprite: {fileID: 21300000, guid: 3d2d64468710a498d82d62daab9324a5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -4198,7 +4194,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &479991458
 GameObject:
@@ -4713,7 +4709,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869cbd0b6995e432d982ce877d76784d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 1
   spinDeadZone: 0.569
@@ -5108,7 +5103,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27affc796e8c4ac89b438f3e70d6c1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.33
@@ -5207,7 +5201,7 @@ GameObject:
   m_Component:
   - component: {fileID: 560681308}
   - component: {fileID: 560681309}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: SAND MANAGER
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5256,7 +5250,7 @@ GameObject:
   m_Component:
   - component: {fileID: 566684588}
   - component: {fileID: 566684589}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5294,7 +5288,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 1131035578}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -5303,7 +5297,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: -2
+  m_SortingOrder: -210
   m_TargetDisplay: 0
 --- !u!1001 &573350176
 PrefabInstance:
@@ -5617,9 +5611,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -135
       objectReference: {fileID: 0}
+    - target: {fileID: 1416940456538567902, guid: 19a3e302a72ac488c89c12a554d10740, type: 3}
+      propertyPath: m_SortingOrder
+      value: -205
+      objectReference: {fileID: 0}
     - target: {fileID: 1416940456538567970, guid: 19a3e302a72ac488c89c12a554d10740, type: 3}
       propertyPath: m_Name
       value: sand
+      objectReference: {fileID: 0}
+    - target: {fileID: 1416940456538567970, guid: 19a3e302a72ac488c89c12a554d10740, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 19a3e302a72ac488c89c12a554d10740, type: 3}
@@ -5771,7 +5773,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27affc796e8c4ac89b438f3e70d6c1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.33
@@ -5815,7 +5816,7 @@ Transform:
   - {fileID: 1244650913}
   - {fileID: 2009577361}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &629637196
 GameObject:
@@ -6310,7 +6311,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1cff1efe1d4b04aa63b755d750f6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 1
@@ -6766,7 +6766,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869cbd0b6995e432d982ce877d76784d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.569
@@ -7492,7 +7491,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27affc796e8c4ac89b438f3e70d6c1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.33
@@ -7516,7 +7514,7 @@ GameObject:
   - component: {fileID: 937848175}
   - component: {fileID: 937848177}
   - component: {fileID: 937848176}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: BowlDown
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7653,7 +7651,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 43.29041
+  m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -7674,7 +7672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869cbd0b6995e432d982ce877d76784d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.569
@@ -7716,7 +7713,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &948023804
 SpriteRenderer:
@@ -7814,7 +7811,7 @@ Transform:
   m_Children:
   - {fileID: 1282315341}
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &964059182
 MonoBehaviour:
@@ -7957,7 +7954,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1cff1efe1d4b04aa63b755d750f6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 1
@@ -8115,9 +8111,9 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: -37.11, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1061296956
 MonoBehaviour:
@@ -8252,7 +8248,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1070577546
 GameObject:
@@ -8618,8 +8614,8 @@ RectTransform:
   m_Father: {fileID: 700034433}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 0.7065997}
+  m_AnchorMax: {x: 1, y: 0.9999999}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -9371,7 +9367,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.8445549, y: 4.6396713}
+  m_Offset: {x: 1.1284142, y: 4.6396713}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -9382,7 +9378,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 54.332436, y: 1.4977493}
+  m_Size: {x: 77.645546, y: 1.4977493}
   m_EdgeRadius: 0
 --- !u!50 &1233642894
 Rigidbody2D:
@@ -9396,7 +9392,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 1
-  m_Mass: 47.313408
+  m_Mass: 142.2802
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
@@ -10009,7 +10005,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869cbd0b6995e432d982ce877d76784d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 1
   spinDeadZone: 0.569
@@ -10115,7 +10110,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869cbd0b6995e432d982ce877d76784d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.569
@@ -10141,7 +10135,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1344076420
 Transform:
   m_ObjectHideFlags: 0
@@ -10564,7 +10558,7 @@ Transform:
   m_Children:
   - {fileID: 735391438}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1410776308
 MonoBehaviour:
@@ -10691,7 +10685,7 @@ Transform:
   m_Children:
   - {fileID: 2015998877}
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1437740563
 GameObject:
@@ -10840,7 +10834,7 @@ Transform:
   m_Children:
   - {fileID: 39012591}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1484791069
 GameObject:
@@ -10872,7 +10866,7 @@ Transform:
   m_Children:
   - {fileID: 387040145}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1488772933
 GameObject:
@@ -12016,7 +12010,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1686558641
 GameObject:
@@ -12487,7 +12481,7 @@ Transform:
   m_Children:
   - {fileID: 1344076420}
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1737598551
 MonoBehaviour:
@@ -12605,7 +12599,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72d85985e53445fa8fea506f53061702, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.33
@@ -12731,7 +12724,7 @@ Transform:
   m_Children:
   - {fileID: 112909423}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1758405021
 GameObject:
@@ -12909,7 +12902,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4a1cff1efe1d4b04aa63b755d750f6ed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 1
@@ -13428,13 +13420,13 @@ GameObject:
   - component: {fileID: 1861209289}
   - component: {fileID: 1861209288}
   - component: {fileID: 1861209287}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Hourglass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!60 &1861209287
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -13522,9 +13514,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18958c979eb464696042cc1ab8ad2fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
-  isRotatable: 0
+  isRotatable: 1
   spinDeadZone: 0.33
   usePhysics: 1
   releaseGravity: 0
@@ -13670,7 +13661,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -200
   m_Sprite: {fileID: 21300000, guid: a823dc83e74fe4681bb2c081fce652c3, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -13700,7 +13691,7 @@ Transform:
   - {fileID: 445994665}
   - {fileID: 566684588}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &1872708324
 GameObject:
@@ -14137,7 +14128,7 @@ GameObject:
   - component: {fileID: 1940593898}
   - component: {fileID: 1940593897}
   - component: {fileID: 1940593896}
-  m_Layer: 5
+  m_Layer: 3
   m_Name: Image
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -14364,7 +14355,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27affc796e8c4ac89b438f3e70d6c1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.33
@@ -15690,7 +15680,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27affc796e8c4ac89b438f3e70d6c1bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.33
@@ -15852,7 +15841,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2134758328
 GameObject:
@@ -16648,7 +16637,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 869cbd0b6995e432d982ce877d76784d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Body: {fileID: 0}
   moveSpeed: 3000
   isRotatable: 0
   spinDeadZone: 0.569
@@ -18655,7 +18643,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8504814081399022750, guid: da26e3128597e43bb923e8114a8ec7ec, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8504814081399022750, guid: da26e3128597e43bb923e8114a8ec7ec, type: 3}
       propertyPath: m_LocalPosition.x
