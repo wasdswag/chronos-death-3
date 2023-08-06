@@ -11,6 +11,10 @@ namespace UIDrama
         
         [SerializeField] private Folder folder;
         [SerializeField] private Error error;
+
+        [SerializeField] private InstallerHeader header;
+       
+        
         
         private bool playButtonIsPressed;
         private void Awake() => playButton.onClick.AddListener(IsDone);
@@ -21,6 +25,12 @@ namespace UIDrama
             progressBar.SetProgress(percent);
             progressText.SetProgress(percent);
             playButton.interactable = percent >= 100;
+        }
+
+        public override void Stop()
+        {
+            base.Stop();
+            header.OnInstallationSuccess();
         }
 
 

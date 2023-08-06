@@ -1,3 +1,4 @@
+using System;
 using NaughtyAttributes;
 using UnityEngine;
 using UnityEngine.AI;
@@ -8,7 +9,7 @@ namespace UIDrama
     [RequireComponent(typeof (Rigidbody2D))]
     public abstract class RbColliderDragger : MonoBehaviour
     {
-        protected Rigidbody2D Body;
+        public Rigidbody2D Body;
         protected float Radius;
         protected float angle { get; set; }
 
@@ -215,5 +216,8 @@ namespace UIDrama
             Vector3 relatedPosition = transform.position - GetCursorPosition();
             return Mathf.Atan2(relatedPosition.x, relatedPosition.y) * Mathf.Rad2Deg;
         }
+
     }
+    
+   
 }
