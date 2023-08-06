@@ -9,7 +9,7 @@ namespace UIDrama
     [RequireComponent(typeof (Rigidbody2D))]
     public abstract class RbColliderDragger : MonoBehaviour
     {
-        public Rigidbody2D Body;
+        protected Rigidbody2D Body;
         protected float Radius;
         protected float angle { get; set; }
 
@@ -216,6 +216,14 @@ namespace UIDrama
             Vector3 relatedPosition = transform.position - GetCursorPosition();
             return Mathf.Atan2(relatedPosition.x, relatedPosition.y) * Mathf.Rad2Deg;
         }
+
+        public void Release()
+        {
+            Body.isKinematic = false;
+            Body.gravityScale = 0;
+            isRotatable = true;
+            Body.constraints = RigidbodyConstraints2D.None;
+        } 
 
     }
     
