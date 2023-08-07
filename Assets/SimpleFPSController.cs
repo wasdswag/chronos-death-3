@@ -42,8 +42,8 @@ public class SimpleFPSController : MonoBehaviour
     private void Start()
     {
         _controller = GetComponent<CharacterController>();
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
+       // Cursor.lockState = CursorLockMode.Locked;
+       // Cursor.visible = false;
 
     }
 

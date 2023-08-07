@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/_UI_Drama/_Scenes/ChronOS_install.unity
     guid: b4106ce4a99be4707b54111bc11e52d1
   - enabled: 1
+    path: Assets/_UI_Drama/_Scenes/Welcome2ChronOS.unity
+    guid: ad93f053fe2ce4501833728f75f912ad
+  - enabled: 0
     path: Assets/_UI_Drama/_Scenes/WinSpinner.unity
     guid: 9ed3eb0ce937e4a8b86358fbba81a49d
   - enabled: 0
