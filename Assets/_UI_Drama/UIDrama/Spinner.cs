@@ -23,6 +23,12 @@ namespace UIDrama
         private bool _isAutoSpinning;
 
 
+        private void OnEnable()
+        {
+            _rotationCounter = 0;
+            OnProgressChange?.Invoke(_rotationCounter);
+
+        }
 
         public void StartAuto()
         {

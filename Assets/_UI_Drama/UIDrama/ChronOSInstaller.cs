@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace UIDrama
@@ -8,7 +9,15 @@ namespace UIDrama
         [SerializeField] private Folder folder;
         [SerializeField] private Error error;
         [SerializeField] private InstallerHeader header;
-       
+
+
+        private void Start()
+        {
+            SetProgress(0);
+            playButton.interactable = false;
+
+        }
+
 
         public override void Stop()
         {

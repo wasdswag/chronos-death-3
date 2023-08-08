@@ -14,6 +14,8 @@ namespace UIDrama
         private void OnEnable()
         {
            if (!trackProgress) return;
+
+           Progress = 0;
             
             if (loader == null)
                 throw new Exception("there is no reference to loader game object");
