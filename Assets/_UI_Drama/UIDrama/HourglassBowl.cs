@@ -11,7 +11,7 @@ namespace UIDrama
         private Camera _camera;
         [SerializeField]  private int _grainsPerRound;
         
-
+        
         private void Start()
         {
             _hourglass = GetComponentInParent<Hourglass>();
